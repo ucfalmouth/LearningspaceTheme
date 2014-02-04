@@ -1,0 +1,203 @@
+// =====================================
+// BASE RULES
+// =====================================
+
+// A Base rule is applied to an element using an element selector, a descendent selector,
+// or a child selector, along with any pseudo-classes.
+// It doesn't include any class or ID selectors.
+// It is defining the default styling for how that element should look in all occurrences on the page.
+
+*, *:after, *:before { 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+html{
+	font-size: 100%;
+	line-height: 1.5em;
+	/*-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;*/
+	text-rendering: optimizeLegibility;
+	background: #E1E7E0;
+}
+
+body {
+	overflow-x: hidden;
+   
+    padding: 0; 
+    margin: 0;
+    //background: #EBECEC;
+    background: $bgcolor;
+    background: #E1E7E0;
+	//-webkit-font-smoothing: antialiased;
+	font-style: $sansserif;
+	margin: 0px 0 0;
+}
+
+@media (min-width: 1441px){
+
+	/*html{
+		font-size: 110%;
+	}*/
+
+
+}
+
+@media (max-width: 600px){
+
+	/*html{
+		font-size: 90%;
+	}*/
+
+	body {
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 460px){
+
+	/*html{
+		font-size: 85%;
+	}*/
+
+	body {
+		padding-right: 0;
+		padding-left: 0;
+		
+	}
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $headingfont;
+	font-weight: 400;
+
+}
+
+h1 {
+	@extend %headingstyles;
+	@include x-rem(font-size, 30px);
+	@include x-rem(line-height, 28px);
+	letter-spacing: 0px;
+}
+
+h2 {
+	@extend %headingstyles;
+	letter-spacing: 0px;
+	@include x-rem(font-size, 18px);
+	@include x-rem(line-height, 21px);
+	letter-spacing: 0px;
+}
+
+h3 {
+	@extend %headingstyles;
+    @include x-rem(font-size, 16px);
+	@include x-rem(line-height, 21px);
+	letter-spacing: 0px;
+}
+
+p {
+	@include x-rem(margin, 0 0 12px 0);
+	font-family: $sansserif;
+	@include x-rem(font-size, 15px);
+	@include x-rem(line-height, 24px);
+	letter-spacing: 0px;
+	font-style: normal;
+	font-weight: 400;
+	display: block;
+	letter-spacing: 0px;
+	color: $textcolour;
+}
+
+@media (max-width: 544px){
+	p {
+		display: block;
+		/*@include x-rem(font-size, 14px);
+		@include x-rem(line-height, 21px);*/
+	}
+}
+
+a{
+	color: $linkcolour;
+	outline: none;
+	font-weight: 400;
+}
+
+a:hover{
+	color: $linkcolour;
+	text-decoration: underline;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+	@include x-rem(margin, 0 0 21px 0);
+}
+
+li{
+	@include x-rem(font-size, 16px);
+	@include x-rem(line-height, 24px);
+	letter-spacing: 0px;
+	color: rgb(105, 105, 109);
+}
+
+blockquote {
+	padding-left: 0px;
+	border-left: solid #BBB;
+	@include x-rem(font-size, 16px);
+	@include x-rem(line-height, 24px);
+	@include x-rem(margin, 0 0 24px 0);
+	@include x-rem(padding, 12px 18px);
+	background: #F0F0F0;
+	margin-top: 1px;
+	font-style: italic;
+	font-weight: 300;
+
+	p {
+		margin-bottom: 0;
+		@include x-rem(font-size, 17px);
+		font-style: italic;
+		font-weight: 400;
+	}
+}
+
+strong, b {
+	font-weight: 500;
+}
+
+footer {
+
+	background-color: #E1E7E0;
+	display: block;
+	padding: 0px;
+	margin-top: -19px;
+	z-index: 100;
+	position: relative;
+	border-top: 1px solid $lightbordercolour;
+
+	a{
+		color: #999999;
+	}
+
+	ul{
+		li{
+			display: inline;
+			font-size: 14px;
+			margin-right: 16px;
+
+			a{
+				font-weight: 400;
+			}
+		}
+		
+	}
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+

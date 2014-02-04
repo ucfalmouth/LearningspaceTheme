@@ -1,0 +1,190 @@
+// ===============================================
+// All variables to be used in your theme go here. 
+// ===============================================
+
+// FONTS
+//$sansserif: 'proxima-nova', 'helvetica', 'arial', sans-serif;
+$sansserif: 'proxima-nova', 'helvetica', 'arial', sans-serif;
+$serif: 'proxima-nova', 'helvetica', 'arial', sans-serif;
+$headingfont: 'proxima-nova',"freight-sans-pro",'Helvetica Neue', 'helvetica', 'arial', sans-serif;
+//$serif: 'adelle', 'georgia', 'times', serif;
+
+$textcolour: #555555;
+$headingcolor: #4e4e4e;
+$linkcolour: #249cd5;
+$linkcolourhover: #24d590;
+//$linkcolourhover: #208bbd;
+
+// Dark text on a light button
+$lightbuttontext: #565656;
+
+// The thin light borders around the site
+$lightbordercolour: #D5D7D8;
+//$lightbordercolour: #ecf2eb;
+
+// Light text on a dark button
+$darkbuttontext: #fff;
+
+$bgcolor: #e7ede6;
+
+// ===============================================
+// PATTERNS
+// ===============================================
+
+// Main page panel style
+%panelstyle{
+	//padding: 18px 30px;
+	@include box-shadow(none);
+	border: solid 1px $lightbordercolour;
+	@include border-radius(4px);
+	@include x-rem(margin, 0);
+	background: #fff;
+	font-family: $sansserif;
+}
+
+%button{
+	border: 1px solid #b9babd;
+	background: none;
+	@include background-image(linear-gradient(#1ABC9C, #27AE60));
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80eeeff2', endColorstr='#80d4d5d8',GradientType=0 ); /* IE6-9 */
+	color: #333537;
+	@include x-rem(padding, 5px 12px 5px);
+	line-height: 22px;
+	text-decoration: none;
+	position: relative;
+	@include x-rem(font-size, 14px);
+	text-shadow: none;
+	@include border-radius(3px);
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	transition: 0.25s;
+	-webkit-backface-visibility: hidden;
+	font-weight: 700;
+	font-family: $sansserif;
+	filter: none;
+	@include box-shadow(none);
+}
+
+// Grey Buttons
+%button-grey{
+	border: 1px solid #bbbcbf;
+	background-color: #ecedf0;
+	background: #ecedf0;
+	@include background-image(linear-gradient(#e9ebf2, #d4d5d8));
+	color: $lightbuttontext;
+	font-weight: 500;
+}
+
+%button-grey-hover{
+	background-color: #ecedf0;
+	background: #ecedf0;
+	@include background-image(linear-gradient(#edeff5, #dddde0));
+}
+
+%button-grey-active{
+	background-color: #ecedf0;
+	background: #ecedf0;
+	@include background-image(linear-gradient(#d4d5d8, #e9ebf2));
+	@include box-shadow(none);
+}
+
+// Blue Buttons
+%button-blue{
+	border: 1px solid #1c7aa6;
+	background-color: #249cd5;
+	background: #249cd5;
+	font-weight: 300;
+	@include background-image(linear-gradient(#36a5d9, #208cbf));
+	color: $darkbuttontext;
+}
+
+%button-blue-hover{
+	background-color: #249cd5;
+	background: #249cd5;
+	@include background-image(linear-gradient(#5eb7e0, #4da3cc));
+}
+
+%button-blue-active{
+	background-color: #249cd5;
+	background: #249cd5;
+	@include background-image(linear-gradient(#208cbf, #36a5d9));
+	@include box-shadow(none);
+}
+
+// Green Buttons
+%button-green{
+	border: 1px solid #1ca671;
+	background-color: #24d590;
+	background: #24d590;
+	font-weight: 300;
+	@include background-image(linear-gradient(#36d99a, #20bf81));
+	color: $darkbuttontext;
+}
+
+%button-green-hover{
+	background-color: #24d590;
+	background: #24d590;
+	@include background-image(linear-gradient(#5ee0ae, #4dcc9a));
+}
+
+%button-green-active{
+	background-color: #24d590;
+	background: #24d590;
+	@include background-image(linear-gradient(#20bf81, #36d99a));
+	@include box-shadow(none);
+}
+
+// Light Blue Buttons
+%button-lightblue{
+	border: 1px solid #1ca671;
+	background-color: #24d590;
+	background: #24d590;
+	font-weight: 300;
+	@include background-image(linear-gradient(#36d99a, #20bf81));
+	color: $darkbuttontext;
+}
+
+%button-lightblue-hover{
+	background-color: #24d590;
+	background: #24d590;
+	@include background-image(linear-gradient(#5ee0ae, #4dcc9a));
+}
+
+%button-lightblue-active{
+	background-color: #24d590;
+	background: #24d590;
+	@include background-image(linear-gradient(#20bf81, #36d99a));
+	@include box-shadow(none);
+}
+
+%form{
+	@include x-rem(font-size, 15px);
+	background-color: #fcfcfc; 
+	@include x-rem(padding, 0px 10px 0 10px);
+	height: 34px;
+	width: 100%;
+	border: 1px solid #d9d9d9;
+	@include box-shadow(rgba(0,0,0,0.15) 0px 0px 4px inset);
+	-webkit-transition: border linear .1s,box-shadow linear .1s;
+	-moz-transition: border linear .1s,box-shadow linear .1s;
+	-o-transition: border linear .1s,box-shadow linear .1s;
+	transition: border linear .1s,box-shadow linear .1s;
+}
+
+%form-hover{
+	border: 1px solid #bbbbbb;
+}
+
+%form-focus{
+	border: 1px solid #aaaaaa;
+	@include box-shadow(none);
+}
+
+%headingstyles{
+	color: $headingcolor;
+    font-style: normal;
+    font-weight: 500;
+    @include x-rem(margin, 0 0 14px 0);
+    letter-spacing: 0px;
+}
