@@ -32,7 +32,7 @@
 <script src="<?php echo $CFG->wwwroot;?>/theme/learningspace/javascript/inboxtable.js"></script>
 <script src="<?php echo $CFG->wwwroot;?>/theme/learningspace/javascript/datatables.min.js"></script>
 <script src="<?php echo $CFG->wwwroot;?>/theme/learningspace/javascript/datatables.plugins.js"></script>
-<!--<script type="text/javascript" src="http://fitvidsjs.com/js/jquery.fitvids.js"></script>-->
+<script type="text/javascript" src="http://fitvidsjs.com/js/jquery.fitvids.js"></script>
 
 
 <script >
@@ -40,7 +40,7 @@ $(document).ready(function() {
 $(".aaronclick").click(function() {
 $("#section-0 .section-modchooser-link a, #section-0 .section-modchooser-link span").click();
 });
-//$("body").fitVids();
+$("body").fitVids();
 });
 </script>
 
