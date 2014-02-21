@@ -79,7 +79,7 @@ $THEME->layouts = array(
         'options' => array('langmenu'=>true),
     ),
     'mypublic' => array(
-        'file' => 'mypublic.php',
+        'file' => 'incourse.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
@@ -152,4 +152,4 @@ if ( strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 8') || strpos($_SERVER['HTTP_USER
     $THEME->javascripts[] = 'html5shiv';
 }
 
-$THEME->javascripts_footer = array('jquery','tooltip','bs-popover','jquery.sidr.min','plugins','scripts');
+$THEME->javascripts_footer = array();

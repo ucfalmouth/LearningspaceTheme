@@ -62,21 +62,13 @@ echo $OUTPUT->doctype() ?>
 <header role="banner" class="navbar navbar-fixed-top">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
-            <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo $SITE->shortname; ?></a>
+
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <div class="nav-collapse collapse">
-            <?php if ($hascustommenu) {
-                echo $custommenu;
-            } ?>
-            <ul class="nav pull-right">
-            <li><?php echo $PAGE->headingmenu ?></li>
-            <li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
-            </ul>
-            </div>
+
         </div>
     </nav>
 </header>
@@ -84,27 +76,7 @@ echo $OUTPUT->doctype() ?>
 <div id="page" class="container-fluid">
 
 <?php if ($hasheader) { ?>
-<header id="page-header" class="clearfix">
-    <?php
-        if (!$haslogo) { ?>
-            <h1><?php echo $PAGE->heading ?></h1>
-            <?php
-        } else { ?>
-             <a class="logo" href="<?php echo $CFG->wwwroot; ?>" title="<?php print_string('home'); ?>">
-             <img src="<?php echo $PAGE->theme->settings->logo_url; ?>">
-             </a>
-             <h1><?php echo $PAGE->heading ?></h1>
-            <?php
-        } ?>
-    <?php if ($hasnavbar) { ?>
-        <nav class="breadcrumb-button"><?php echo $PAGE->button; ?></nav>
-        <?php echo $OUTPUT->navbar(); ?>
-    <?php } ?>
 
-    <?php if (!empty($courseheader)) { ?>
-        <div id="course-header"><?php echo $courseheader; ?></div>
-    <?php } ?>
-</header>
 <?php } ?>
 
 <div id="page-content" class="row-fluid">
@@ -122,7 +94,7 @@ echo $OUTPUT->doctype() ?>
 <?php } ?>
 
 
-    <?php echo $coursecontentheader; ?>
+    
     <?php echo $OUTPUT->main_content() ?>
     <?php echo $coursecontentfooter; ?>
     </section>
@@ -158,4 +130,4 @@ echo $OUTPUT->doctype() ?>
 <?php } ?>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include 'maintenance-footer.php'; ?>

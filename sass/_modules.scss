@@ -24,6 +24,7 @@
 	position: relative;
 	border-radius: 5px;
 	font-size: 16px;
+	line-height: 24px;
 	font-weight: 400;
 	font-family: $sansserif;
 
@@ -136,7 +137,7 @@
 
 }
 
-.pagelayout-course .breadcrumb, .pagelayout-incourse .breadcrumb, .pagelayout-admin .breadcrumb{
+.pagelayout-course .breadcrumb, .pagelayout-incourse .breadcrumb, .pagelayout-admin .breadcrumb, .pagelayout-mypublic .breadcrumb{
 	margin: -18px -30px 0;
 }
 
@@ -349,47 +350,72 @@ padding: 9px 14px;
 font-size: 14px;
 }
 
+.form-item .form-label, .mform .fitem div.fitemtitle{
+	width: 100%;
+}
+
 .loginbox .loginform .form-input {
 float: left;
 width: 100%;
 
 #username{
+	@include box-sizing(content-box);
+	width: 92%;
+	padding: 24px 4%;
 	margin-bottom: -2px;
+		height: 18px;
+	
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
 
 
-		-webkit-border-bottom-right-radius: 0px;
-		-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
 
 
-		-moz-border-radius-bottomright: 0px;
-		-moz-border-radius-bottomleft: 0px;
-
-
-		border-bottom-right-radius: 0px;
-		border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
 }
 
 #password{
+	height: 18px;
+	width: 92%;
+	padding: 24px 4%;
+	@include box-sizing(content-box);
 
 
-
-		-webkit-border-top-right-radius: 0px;
-		-webkit-border-top-left-radius: 0px;
-
-
-		-moz-border-radius-topright: 0px;
-		-moz-border-radius-topleft: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
 
 
-		border-top-right-radius: 0px;
-		border-top-left-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-topleft: 0px;
+
+
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
 }
 
 #loginbtn{
 
-	padding: 13px 10px;
+@extend %button-blue;
+	box-sizing: content-box;
+	margin-left: 0;
+	padding: 13px 0px;
 font-size: 18px;
 font-weight: 300;
+}
+
+#loginbtn:hover{
+
+@extend %button-blue-hover;
+
+}
+
+#loginbtn:active{
+
+@extend %button-blue-active;
+
 }
 
 }
@@ -554,6 +580,13 @@ input[type="password"]+input[type="submit"]{
 	margin-bottom: 10px;
 }
 
+ #id_submitbutton:visited,
+input[type="password"]+input[type="submit"]{
+	@extend %button;
+	@extend %button-blue;
+	margin-bottom: 10px;
+}
+
  #id_submitbutton:hover,
 input[type="password"]+input[type="submit"]:hover{
 	@extend %button;
@@ -571,6 +604,13 @@ input[type="password"]+input[type="submit"]:hover{
 }
 
 .btn.btn-primary,
+input[type="password"]+input[type="submit"] {
+	@extend %button;
+	@extend %button-blue;
+	margin-bottom: 10px;
+}
+
+.btn.btn-primary:visited,
 input[type="password"]+input[type="submit"] {
 	@extend %button;
 	@extend %button-blue;
@@ -607,6 +647,11 @@ input[type="password"]+input[type="submit"]:active{
 	@extend %button-green;
 }
 
+.btn.btn-success:visited {
+	@extend %button;
+	@extend %button-green;
+}
+
 .btn.btn-success:hover{
 	@extend %button;
 	@extend %button-green;
@@ -639,6 +684,11 @@ a [class^="icon-"], a [class*=" icon-"] {
 	@extend %button-grey;
 }
 
+.btn.btn-secondary:visited {
+	@extend %button;
+	@extend %button-grey;
+}
+
 .btn.btn-secondary:hover {
 	@extend %button;
 	@extend %button-grey;
@@ -652,6 +702,11 @@ a [class^="icon-"], a [class*=" icon-"] {
 }
 
 .btn.btn-info {
+	@extend %button;
+	@extend %button-lightblue;
+}
+
+.btn.btn-info:visited {
 	@extend %button;
 	@extend %button-lightblue;
 }
@@ -720,6 +775,39 @@ td.submit input[disabled] {
 	margin-bottom: 10px;
 }
 
+input.form-submit:visited, 
+input#id_submitbutton:visited, 
+input#id_submitbutton2:visited, 
+.path-admin .buttons input[type="submit"]:visited, 
+td.submit input:visited, 
+input.form-submit:visited, 
+input#id_submitbutton:visited, 
+input#id_submitbutton2:visited, 
+.path-admin .buttons input[type="submit"]:visited, 
+td.submit input:visited, 
+input.form-submit:visited, 
+input#id_submitbutton:visited, 
+input#id_submitbutton2:visited, 
+.path-admin .buttons input[type="submit"]:visited, 
+td.submit input:visited, 
+input.form-submit:visited, 
+input#id_submitbutton:visited, 
+input#id_submitbutton2:visited, 
+.path-admin .buttons input[type="submit"]:visited, 
+td.submit input, input.form-submit.disabled:visited, 
+input#id_submitbutton.disabled:visited, 
+input#id_submitbutton2.disabled:visited, 
+.path-admin .buttons input[type="submit"].disabled:visited, 
+td.submit input.disabled, input.form-submit[disabled]:visited, 
+input#id_submitbutton[disabled]:visited, 
+input#id_submitbutton2[disabled]:visited, 
+.path-admin .buttons input[type="submit"][disabled]:visited, 
+td.submit input[disabled] {
+	@extend %button;
+	@extend %button-blue;
+	margin-bottom: 10px;
+}
+
 input.form-submit:hover, 
 input#id_submitbutton:hover, 
 input#id_submitbutton2:hover, 
@@ -773,6 +861,9 @@ input#id_submitbutton{
 
 .coursesearchbox input[type="submit"]{
 	float: right;
+	position: absolute;
+	right: 0;
+	height: 34px;
 }
 
 // =====================================
@@ -800,7 +891,7 @@ input#id_submitbutton{
 	z-index: 999999;
 	width: 260px;
 	overflow-x: none;
-	overflow-y: auto;
+	overflow-y: scroll;
 	background: #37373F;
 	color: #fff;
 	-webkit-box-shadow: none;
@@ -1157,6 +1248,10 @@ input#id_submitbutton{
 		color: white;
 	}
 
+	p{
+		color: #acacac;
+	}
+
 	background: none;
 	padding: 16px 0 0;
 	margin-bottom: 0;
@@ -1276,11 +1371,12 @@ input#id_submitbutton{
 	width: 33%;
 	float: left;
 	margin-left: -1px;
-	background: #fafcfa;
+	background: #FDFDFD;
 	border-left: 1px solid $lightbordercolour;
+	padding-bottom: 4em;
 }
 
-.pagelayout-coursecategory #region-pre,.pagelayout-frontpage #region-pre, .pagelayout-admin #region-pre, .pagelayout-incourse #region-pre, .pagelayout-standard #region-pre{
+.pagelayout-coursecategory #region-pre,.pagelayout-frontpage #region-pre, .pagelayout-admin #region-pre, /*.pagelayout-incourse #region-pre,*/ .pagelayout-standard #region-pre{
 		width: 33%;
 	float: left;
 	margin-left: -1px;
@@ -1290,6 +1386,7 @@ input#id_submitbutton{
 	background: none;
 	margin-top: -19px;
 padding-top: 59px;
+padding-bottom: 4em;
 	.adminsearchform{
 		display: none;
 	}
@@ -1303,7 +1400,7 @@ padding-top: 0px;
 
 
 
-.pagelayout-report #region-pre, .pagelayout-base #region-pre, .pagelayout-admin #region-pre, .pagelayout-incourse #region-pre{
+.pagelayout-report #region-pre, .pagelayout-base #region-pre, .pagelayout-admin #region-pre, /*.pagelayout-incourse #region-pre*/{
 	float: right;
 }
 
@@ -1315,7 +1412,7 @@ padding-top: 0px;
 			margin-right: 0px;
 			margin-bottom: -1px;
 			padding-left: 20px;
-			background: #f3f5f2;
+			background: #f1f1f1;
 		}
 
 		> li.type_custom.current_branch {
@@ -1379,12 +1476,17 @@ padding-top: 0px;
 	line-height: 24px;
 }
 
+.block_section_warning{
+	//display: none;
+}
+
+.sidr-class-block_section_warning {
+	opacity: 0;
+}
+
 .block_html{
 
-	border: none;
-	box-shadow: none;
-	background: none;
-	padding: 0;
+
 
 
 
@@ -1476,6 +1578,10 @@ padding-top: 0px;
 	}
 }
 
+.block_section_warning + .skip-block + .block_course_menu{
+	margin-top: -1px;
+}
+
 .block_tree>li>p>a, .block_tree>li>p>span, .block_tree .nav-header {
 	text-shadow: none;
 }
@@ -1499,7 +1605,7 @@ padding-top: 0px;
 	}
 
 	.content{
-		display: none;
+		//display: none;
 	}
 
 	.header{
@@ -1658,4 +1764,33 @@ img.icon {
 
 #search-header{
 	display: none;
+}
+
+ .user-enroller-panel {
+width: 400px;
+background-color: #666;
+position: absolute;
+top: 10%;
+left: 10%;
+border: 1px solid #666;
+border-width: 0 5px 5px 0;
+z-index: 100;
+}
+
+
+// turn editing on/off
+.editing .navbar-inverse .nav > li > a.turn-edit-off, .editing .sidr-class-turn-edit-off{
+	display: block;
+}
+
+.editing .navbar-inverse .nav > li > a.turn-edit-on, .editing .sidr-class-turn-edit-on{
+	display: none;
+}
+
+.navbar-inverse .nav > li > a.turn-edit-off, .sidr-class-turn-edit-off{
+	display: none;
+}
+
+.navbar-inverse .nav > li > a.turn-edit-on, .sidr-class-turn-edit-on{
+	display: block;
 }

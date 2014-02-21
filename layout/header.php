@@ -55,11 +55,10 @@ echo $OUTPUT->doctype() ?>
 
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <script type="text/javascript" src="//use.typekit.net/ull6bqj.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <?php echo $OUTPUT->standard_head_html() ?>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-    <link href="/learningspace/theme/learningspace/style/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo $CFG->wwwroot; ?>/theme/learningspace/style/print.css" media="print" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <script>
     /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
@@ -81,10 +80,13 @@ echo $OUTPUT->doctype() ?>
 <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
 <![endif]-->
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
 </head>
 
 <body id="<?php p($PAGE->bodyid) ?>" class="cbp-spmenu-push <?php p($PAGE->bodyclasses.' '.join($bodyclasses)) ?>">
+
+
+
     <div id="wrapper">
    <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
@@ -93,10 +95,10 @@ echo $OUTPUT->doctype() ?>
             <div class="container-fluid">
                 <a class="brand" href="<?php echo $CFG->wwwroot;?>">Learning Space<?php //echo $SITE->shortname; ?></a>
                 <div id="mobile-header">
-                    <a id="responsive-menu-button" href="#sidr-main"><i class="icon-reorder icon"></i><i class="icon-remove-circle icon"></i></a>
+                    <a id="responsive-menu-button" href="#sidr-main"><i class="fa icon fa-bars"></i></a>
                 </div>
                 <ul class="nav">
-                    <li><a href="<?php echo $CFG->wwwroot;?>/course">Courses</a></li>
+                    <li><a href="<?php echo $CFG->wwwroot;?>">My Modules</a></li>
                     
                     <li><a class="menu-item-resources dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
                         <ul class="dropdown-menu">
@@ -104,7 +106,7 @@ echo $OUTPUT->doctype() ?>
         <a tabindex="-1" href="#">Creative Futures</a>
         <ul class="dropdown-menu">
             <li><a href="http://careerhub.falmouth.ac.uk">Creative Futures Hub (Employability)</a></li> 
-            <li><a href="/course/category.php?id=59">Software Training</a></li>
+            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=686">Software Training</a></li>
         </ul>
     </li>
     <li class="dropdown-submenu">
@@ -151,6 +153,8 @@ echo $OUTPUT->doctype() ?>
                     echo $custommenu;
                 } ?>
                 <ul class="nav pull-right">
+                <li class="editbtn"><?php echo $PAGE->button; ?></li> 
+                 
                   <li><a href="http://etsupport.freshdesk.com/support/solutions/158481">Help</a></li> 
                 <li><?php echo $PAGE->headingmenu ?></li>
                 <li class="dropdown"><?php echo $OUTPUT->login_info() ?></li>
@@ -197,21 +201,24 @@ echo $OUTPUT->doctype() ?>
 <?php } ?>
 
 
-<!--<?php
+<?php
     // User roles hack. 
     global $COURSE;
     global $USER;
     $role = $USER->description;
+    //$role = "ET";
+    //print_r($USER);
+
     $coursecontext = get_context_instance(CONTEXT_COURSE, $COURSE->id);
 
     if (!has_capability('moodle/course:viewhiddensections', $coursecontext)) {
-        echo "<div data-role=\"student\" id=\"userrole\" style=\"display:none\"></div>";
+        echo "<div data-role=\"student\" id=\"userrole\" style=\"display:none\">Role is ".$role."</div>";
     } 
     else if (has_capability('moodle/course:viewhiddensections', $coursecontext) && $role != "ET") {
-        echo "<div data-role=\"teacher\" id=\"userrole\" style=\"display:none\"></div>";
+        echo "<div data-role=\"teacher\" id=\"userrole\" style=\"display:none\">Role is ".$role."</div>";
     } 
     else if (has_capability('moodle/course:viewhiddensections', $coursecontext) && $role == "ET") {
-        echo "<div data-role=\"admin\" id=\"userrole\" style=\"display:none\"></div>";
+        echo "<div data-role=\"admin\" id=\"userrole\" style=\"display:none\">Role is ".$role."</div>";
     }
-?>-->
+?>
 

@@ -41,12 +41,12 @@ echo $categoryname;
           if ($layout === 'pre-and-post') { ?>
             <aside id="region-pre" class="span4 block-region desktop-first-column region-content">
             <h2 id="search-header">Search</h2>
-            <form id="coursesearch3" action="http://localhost:8888/learningspace/course/search.php" method="get"><fieldset class="coursesearchbox invisiblefieldset" id="yui_3_7_3_2_1390593889643_101"><input type="text" id="coursesearchbox" size="30" name="search" value="" placeholder="Search courses"><input type="submit" value="Go"></fieldset></form>
+            <form id="coursesearch3" action="<?php echo $CFG->wwwroot ?>/course/search.php" method="get"><fieldset class="coursesearchbox invisiblefieldset"><input type="text" id="coursesearchbox" size="30" name="search" value="" placeholder="Search modules..."><input type="submit" value="Go"></fieldset></form>
     <?php } else if ($layout === 'side-pre-only') { ?>
 
             <aside id="region-pre" class="span3 block-region desktop-first-column region-content">
             <h2 id="search-header">Search</h2>
-            <form id="coursesearch3" action="http://localhost:8888/learningspace/course/search.php" method="get"><fieldset class="coursesearchbox invisiblefieldset" id="yui_3_7_3_2_1390593889643_101"><input type="text" id="coursesearchbox" size="30" name="search" value="" placeholder="Search courses"><input type="submit" value="Go"></fieldset></form>
+            <form id="coursesearch3" action="<?php echo $CFG->wwwroot ?>/course/search.php" method="get"><fieldset class="coursesearchbox invisiblefieldset"><input type="text" id="coursesearchbox" size="30" name="search" value="" placeholder="Search modules..."><input type="submit" value="Go"></fieldset></form>
     <?php } ?>
           <?php
                 if (!right_to_left()) {

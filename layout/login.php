@@ -47,13 +47,18 @@ echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes() ?> class="login-page">
 <head>
     <title><?php echo $PAGE->title ?></title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
         <script type="text/javascript" src="//use.typekit.net/ull6bqj.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo $CFG->wwwroot; ?>/theme/learningspace/style/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
     <script>
     /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
     * Build: http://modernizr.com/download/#-csstransforms3d-shiv-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-load
@@ -63,7 +68,7 @@ echo $OUTPUT->doctype() ?>
     <!--[if lt IE 9]>
         <link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
     <![endif]-->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+ 
 </head>
 
 <body id="<?php p($PAGE->bodyid) ?>" class="cbp-spmenu-push <?php p($PAGE->bodyclasses.' '.join($bodyclasses)) ?>">
@@ -112,6 +117,8 @@ echo $OUTPUT->doctype() ?>
         <div id="page-content" class="row-fluid">
 
             <section id="region-main" class="offset4 login-panel span4">
+            <p id="staffvalidate" class="  alert-danger"><i class="fa fa-exclamation-triangle"></i> No need to use "Staff\"</p>
+            <p id="studentvalidate" class="  alert-danger"><i class="fa fa-exclamation-triangle"></i> No need to use "Student\"</p>
                 <?php echo $coursecontentheader; ?>
                 <?php echo $OUTPUT->main_content() ?>
                 <?php echo $coursecontentfooter; ?>

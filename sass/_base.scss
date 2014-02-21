@@ -16,12 +16,12 @@
 html{
 	font-size: 100%;
 	line-height: 1.5em;
-	/*-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-ms-font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;*/
+	-o-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
-	background: #E1E7E0;
+	background: #DFDFDF;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
     margin: 0;
     //background: #EBECEC;
     background: $bgcolor;
-    background: #E1E7E0;
+    background: #DFDFDF;
 	//-webkit-font-smoothing: antialiased;
 	font-style: $sansserif;
 	margin: 0px 0 0;
@@ -80,16 +80,16 @@ h1, h2, h3, h4, h5, h6{
 h1 {
 	@extend %headingstyles;
 	@include x-rem(font-size, 30px);
-	@include x-rem(line-height, 28px);
-	letter-spacing: 0px;
+	@include x-rem(line-height, 36px);
+	letter-spacing: -0.5px;
 }
 
 h2 {
 	@extend %headingstyles;
-	letter-spacing: 0px;
+	letter-spacing: -0.5px;
 	@include x-rem(font-size, 18px);
 	@include x-rem(line-height, 21px);
-	letter-spacing: 0px;
+
 }
 
 h3 {
@@ -102,7 +102,7 @@ h3 {
 p {
 	@include x-rem(margin, 0 0 12px 0);
 	font-family: $sansserif;
-	@include x-rem(font-size, 15px);
+	@include x-rem(font-size, 16px);
 	@include x-rem(line-height, 24px);
 	letter-spacing: 0px;
 	font-style: normal;
@@ -126,6 +126,11 @@ a{
 	font-weight: 400;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+color: inherit;
+font-weight: 300;
+}
+
 a:hover{
 	color: $linkcolour;
 	text-decoration: underline;
@@ -139,7 +144,7 @@ li{
 	@include x-rem(font-size, 16px);
 	@include x-rem(line-height, 24px);
 	letter-spacing: 0px;
-	color: rgb(105, 105, 109);
+	//color: rgb(105, 105, 109);
 }
 
 blockquote {
@@ -168,7 +173,7 @@ strong, b {
 
 footer {
 
-	background-color: #E1E7E0;
+	background-color: #DFDFDF;
 	display: block;
 	padding: 0px;
 	margin-top: -19px;
@@ -185,6 +190,7 @@ footer {
 			display: inline;
 			font-size: 14px;
 			margin-right: 16px;
+			
 
 			a{
 				font-weight: 400;
@@ -200,4 +206,17 @@ fieldset {
 	padding: 0;
 }
 
+textarea, textarea:hover, textarea:focus{
+	padding-top: 3px;
+}
 
+select, input, button, textarea{
+	font: 100% $sansserif;
+
+}
+
+label, input, button, select, textarea{
+	font-size: 16px;
+font-weight: normal;
+line-height: 24px;
+}
