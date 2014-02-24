@@ -25,26 +25,26 @@ $("body").fitVids();
     
     // Its its a warning, add the warning icon
     if($(this).hasClass("alert-error")){
-      var icon = "<i class=\"icon-exclamation-sign\"></i> ";
+      var icon = "<i class=\"fa fa-exclamation-circle\"></i> ";
       $(this).prepend(icon);
     }
 
     // Its its a success, add the calendar icon
     if($(this).hasClass("alert-success")){
-      var icon = "<i class=\"icon-calendar\"></i> ";
+      var icon = "<i class=\"fa fa-calendar\"></i> ";
       $(this).prepend(icon);
     }
 
     // Its its a info, add the speech bubble icon
     if($(this).hasClass("alert-info")){
-      var icon = "<i class=\"icon-comment\"></i> ";
+      var icon = "<i class=\"fa fa-comment\"></i> ";
       $(this).prepend(icon);
     }
 
   });
 
   $(".content").find("blockquote").each(function(){
-    var icon = "<i class=\"icon-quote-left\"></i> ";
+    var icon = "<i class=\"fa fa-quote-left\"></i> ";
       $(this).prepend(icon);
   });
 
