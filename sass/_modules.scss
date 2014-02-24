@@ -499,7 +499,8 @@ input[type="password"]+input[type="submit"]{
 .btn, #id_cancel, 
 input[type="password"]+input[type="submit"], 
 button, input.form-submit,  
-input[type="button"], input[type="submit"], 
+input[type="button"], 
+input[type="submit"], 
 input[type="reset"] {
 	@extend %button;
 	@extend %button-grey;
@@ -518,13 +519,25 @@ input[type="reset"]:hover {
 	@extend %button-grey-hover;
 }
 
-.btn:active{
+.btn:active, 
+#id_cancel:active, 
+input[type="password"]+input[type="submit"]:active, 
+button, input.form-submit:active, 
+input[type="button"]:active, 
+input[type="submit"]:active, 
+input[type="reset"]:active{
 	@extend %button;
 	@extend %button-grey;
 	@extend %button-grey-active;
 }
 
-.btn:focus{
+.btn:focus, 
+#id_cancel:focus, 
+input[type="password"]+input[type="submit"]:focus, 
+button, input.form-submit:focus, 
+input[type="button"]:focus, 
+input[type="submit"]:focus, 
+input[type="reset"]:focus{
 	@extend %button;
 	@extend %button-grey;
 }
