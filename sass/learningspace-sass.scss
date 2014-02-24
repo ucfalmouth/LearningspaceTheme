@@ -1862,7 +1862,8 @@ letter-spacing: 0px;
 .pagelayout-standard #region-main .name,.path-course.pagelayout-coursecategory #region-main .courseboxes>ul>li .coursebox>.info>.name, .coursebox .content .teachers, .coursebox .content .courseimage, .coursebox .content .coursefile {
 float: none;
 font-size: 24px;
-margin-bottom: 0.333rem;
+line-height: 32px;
+margin-bottom: 0px;
 width: 100%;
 clear: left;
 }
