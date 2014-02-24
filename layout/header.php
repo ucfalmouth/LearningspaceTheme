@@ -102,50 +102,24 @@ echo $OUTPUT->doctype() ?>
                     
                     <li><a class="menu-item-resources dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
                         <ul class="dropdown-menu">
-    <li class="dropdown-submenu">
-        <a tabindex="-1" href="#">Creative Futures</a>
-        <ul class="dropdown-menu">
-            <li><a href="http://careerhub.falmouth.ac.uk">Creative Futures Hub (Employability)</a></li> 
-            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=686">Software Training</a></li>
-        </ul>
-    </li>
-    <li class="dropdown-submenu">
-        <a tabindex="-1" href="#">Resource Centres</a>
-        <ul class="dropdown-menu">
-            <li><a href="/theme/learningspace/pages/plaster-room/index.php">Design Centre</a></li> 
-            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=597">Media Centre</a></li>
-            <li><a href="http://learningspace.falmouth.ac.uk/course/category.php?id=88">Performance Centre</a></li>
-            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=591&section=1&section=1">Photography Centre</a></li>
-        </ul>
-    </li>
-    <li class="dropdown-submenu">
-        <a tabindex="-1" href="#">Technical Support</a>
-        <ul class="dropdown-menu">
-            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=595&section=1&section=1">Audio for Media Production</a></li>
-            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=593&section=1&section=1">Cameras and lighting</a></li>
-            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=530&section=1&section=1">Digital Illustration </a></li>
-            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=598&section=1&section=1">Interactive Media</a></li>
-            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=596&section=1&section=1">Motion Graphics and Photoshop with Media</a></li>
-            <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=594&section=1&section=1">Video Editing and Post Production</a></li>
-            <li><a href="/course/category.php?id=59">Software Training</a></li>
-        </ul> 
-    </li>                           
-    <li><a href="http://ask.fxplus.ac.uk/">ASK (Academic Skills)</a></li>
-    <li><a href="http://dyslexia.fxplus.ac.uk">Dyslexia Skills</a></li>
-    <li><a href="http://intranet.falmouth.ac.uk/html/finance/">Finance Services</a></li>
-    <li><a href="http://www.fxu.org.uk/">FXU</a></li>
-    <li><a href="https://sp.falmouth.ac.uk/public/itservices/Pages/IT%20Services.aspx">IT Services</a></li>
-    <li><a href="http://library.fxplus.ac.uk/">Library and Information Services</a></li>
-    <li><a href="http://intranet.falmouth.ac.uk/html/qualityoffice/">Quality Office</a></li>
-    <li><a href="/course/view.php?id=665">Results Release</a></li>
-    <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=714&section=1&section=1">Student Reps</a></li>
-    <li><a href="http://www.fxplus.ac.uk/study/student-support-services">Student Support</a></li>
-    <li><a href="http://www.falmouth.ac.uk/facilities/the-compass">The Compass</a></li>
-    <li class="divider"></li>
-    <li class="disabled">
-        <a href="http://et.tenderapp.com/help/discussion/new" style="cursor:pointer">Not listed? Please make contact here</a>
-    </li>
-</ul>
+                                <li><a href="http://ask.fxplus.ac.uk/">ASK (Academic Skills)</a></li>
+                                <li><a href="http://www.falmouth.ac.uk/facilities/the-compass">The Compass</a></li>
+                                <li><a href="http://careerhub.falmouth.ac.uk">Creative Futures Hub</a></li>
+                                <li><a href="http://dyslexia.fxplus.ac.uk">Dyslexia Skills</a></li>
+                                <li><a href="http://intranet.falmouth.ac.uk/html/finance/">Finance Services</a></li>
+                                <li><a href="http://www.fxu.org.uk/">FXU</a></li>
+                                <li><a href="https://sp.falmouth.ac.uk/public/itservices/Pages/IT%20Services.aspx">IT Services</a></li>
+                                <li><a href="http://library.fxplus.ac.uk/">Library and Information Services</a></li>
+                                <li><a href="http://intranet.falmouth.ac.uk/html/qualityoffice/">Quality Office</a></li>
+                                <li><a href="/course/view.php?id=665">Results Release</a></li>
+                                <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=686">Software Training</a></li>
+                                <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=714&section=1&section=1">Student Reps</a></li>
+                                <li><a href="http://www.fxplus.ac.uk/study/student-support-services">Student Support</a></li>
+                                <li class="divider"></li>
+                                <li class="disabled">
+                                <a href="http://etsupport.freshdesk.com/support/tickets/new" style="cursor:pointer">Not listed? Please make contact here</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="">
