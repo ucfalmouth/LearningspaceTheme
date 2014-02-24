@@ -61,13 +61,13 @@ $('.mdl-bottom .btn').click(function(e) {
 
 
 
-$(".section-navigation.mdl-bottom").find(".mdl-left a").prepend("<i class=\"icon-chevron-left\"></i> ");
+$(".section-navigation.mdl-bottom").find(".mdl-left a").prepend("<i class=\"fa fa-chevron-left\"></i> ");
 
   $(".section-navigation.mdl-bottom").find(".mdl-left a").prepend("<h2>Previous section:</h2> ");
 
 
 
-$(".section-navigation.mdl-bottom").find(".mdl-right a").prepend(" <i class=\"icon-chevron-right\"></i>");
+$(".section-navigation.mdl-bottom").find(".mdl-right a").prepend(" <i class=\"fa fa-chevron-right\"></i>");
 
 $(".section-navigation.mdl-bottom").find(".mdl-right a").prepend(" <h2>Next section:</h2>");
 
