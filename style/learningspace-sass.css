@@ -243,7 +243,7 @@ td.submit input.active {
   background-image: -moz-linear-gradient(#36a5d9, #208cbf);
   background-image: -o-linear-gradient(#36a5d9, #208cbf);
   background-image: linear-gradient(#36a5d9, #208cbf);
-  color: white; }
+  color: white !important; }
 
 .loginbox .loginform .form-input #loginbtn:hover, #id_submitbutton:hover,
 input[type="password"] + input[type="submit"]:hover, .btn.btn-primary:hover, .section-navigation.mdl-bottom > span > a.btn-primary:hover, input.form-submit:hover,
@@ -299,7 +299,7 @@ td.submit input.active {
   background-image: -moz-linear-gradient(#36d99a, #20bf81);
   background-image: -o-linear-gradient(#36d99a, #20bf81);
   background-image: linear-gradient(#36d99a, #20bf81);
-  color: white; }
+  color: white !important; }
 
 .btn.btn-success:hover, .section-navigation.mdl-bottom > span > a.btn-success:hover {
   background-color: #24d590;
@@ -335,7 +335,7 @@ td.submit input.active {
   background-image: -moz-linear-gradient(#36d99a, #20bf81);
   background-image: -o-linear-gradient(#36d99a, #20bf81);
   background-image: linear-gradient(#36d99a, #20bf81);
-  color: white; }
+  color: white !important; }
 
 .btn.btn-info:hover, .section-navigation.mdl-bottom > span > a.btn-info:hover {
   background-color: #24d590;
@@ -4058,7 +4058,7 @@ margin-top: 90px;
 
 .pagelayout-coursecategory .box.courseboxes {
   width: 100%;
-  padding-top: 20px; }
+  padding-top: 0px; }
 
 .path-course.pagelayout-coursecategory #region-main .courseboxes > ul > li {
   padding: 0 0 11px 0;
@@ -4396,3 +4396,6 @@ div[role="main"] {
   position: relative;
   border-radius: 5px;
   font-size: 12px; }
+
+.icon-info-sign {
+  display: none !important; }

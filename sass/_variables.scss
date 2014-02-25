@@ -100,7 +100,7 @@ $bgcolor: #EBEBEB;
 	font-weight: 300;
 	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#36a5d9', endColorstr='#208cbf');
 	@include background-image(linear-gradient(#36a5d9, #208cbf));
-	color: $darkbuttontext;
+	color: $darkbuttontext !important;
 }
 
 %button-blue-hover{
@@ -126,7 +126,7 @@ $bgcolor: #EBEBEB;
 	font-weight: 300;
 	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#36d99a', endColorstr='#20bf81');
 	@include background-image(linear-gradient(#36d99a, #20bf81));
-	color: $darkbuttontext;
+	color: $darkbuttontext !important;
 }
 
 %button-green-hover{
@@ -152,7 +152,7 @@ $bgcolor: #EBEBEB;
 	font-weight: 300;
 	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#36d99a', endColorstr='#20bf81');
 	@include background-image(linear-gradient(#36d99a, #20bf81));
-	color: $darkbuttontext;
+	color: $darkbuttontext !important;
 }
 
 %button-lightblue-hover{

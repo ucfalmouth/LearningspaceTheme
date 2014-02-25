@@ -1705,7 +1705,7 @@ line-height: 2.75;
 .pagelayout-coursecategory .box.courseboxes{
 	width: 100%;
 
-	padding-top: 20px;
+	padding-top: 0px;
 }
 
 .path-course.pagelayout-coursecategory #region-main .courseboxes>ul>li {
@@ -2168,4 +2168,8 @@ position: relative;
 border-radius: 5px;
 font-size: 12px;
 
+}
+
+.icon-info-sign{
+	display: none !important;
 }
