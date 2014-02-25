@@ -110,6 +110,10 @@ p {
 	display: block;
 	letter-spacing: 0px;
 	color: $textcolour;
+
+	@media (max-width: 850px){
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 544px){
