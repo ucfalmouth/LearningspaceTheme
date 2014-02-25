@@ -1,0 +1,229 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/*!
+ * print.css v1.0.0
+ * http://printstylesheet.com/
+ *
+ * Copyright (c) 2011 David Bushell
+ * Dual licensed under the BSD or MIT licenses: http://printstylesheet.com/license.txt
+ 
+ * Author: David Bushell
+ * http://dbushell.com/
+ */
+
+/* use a media query to limit the CSS to only print devices, like a printer */
+@media only print
+{
+	/* hide every element within the body */
+	
+	/* add a friendy reminder not to waste paper after the body */
+	body:before { content: "Don't waste paper!"; }
+
+
+@page {
+	margin: 0.5cm;
+}
+
+body {
+
+	font: 12pt Georgia, "Times New Roman", Times, serif !important;
+	line-height: 1.3;
+	color: black;
+
+	p{
+		font: 12pt Georgia, "Times New Roman", Times, serif !important;
+	line-height: 1.3;
+	color: black;
+	}
+}
+
+h1 {
+	display: inline-block;
+	font-size: 18pt;
+	color: black;
+	font: 24pt Georgia, "Times New Roman", Times, serif !important;
+}
+
+h2, h3, h4, h5, h6 {
+	display: inline-block;
+	color: black;
+	font-size: 14pt;
+	margin-top: 25px;
+	font: 14pt Georgia, "Times New Roman", Times, serif !important;
+}
+
+select{
+	display: none !important;
+}
+
+h1 {
+font-size: 18pt;
+font-size: 1.5rem;
+line-height: 28px;
+line-height: 1.75rem;
+margin: 0;
+}
+
+.pagelayout-course #region-main, .pagelayout-incourse #region-main, .pagelayout-incourse #region-main, #page-course-edit #region-main, #page-enrol-users #region-main, #page-mod-page-mod #region-main {
+padding: 0;
+position: relative;
+z-index: 1;
+background: #fff;
+font: 14pt Georgia, "Times New Roman", Times, serif !important;
+}
+
+.brand{
+	display: none !important;
+}
+
+.course-content .single-section {
+padding: 0 ;
+border: none;
+border-bottom: none;
+margin-bottom: 0px;
+}
+
+#footer{
+	display: none;
+}
+
+input, button{
+	display: none !important;
+}
+
+.pagelayout-course #region-main, .pagelayout-incourse #region-main, .pagelayout-incourse #region-main, #page-course-edit #region-main, #page-enrol-users #region-main, #page-mod-page-mod #region-main {
+	font: 12pt Georgia, "Times New Roman", Times, serif !important;
+	line-height: 1.3;
+	color: black;
+}
+
+.iconlarge{display: none !important;}
+
+.alert {
+padding: 8px 35px 8px 54px;
+margin-bottom: 20px;
+text-shadow: none;
+background-color: none !important;
+border: none;
+color: black;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+position: relative;
+border-radius: 5px;
+font-size: 14pt;
+font-weight: 400;
+font-family: Georgia, "Times New Roman", Times, serif !important;
+}
+
+iframe{
+	display: none;
+
+}
+
+.btn{
+	display: none;
+}
+
+#page {
+padding-top: 0px;
+}
+
+.breadcrumb{
+	display: none;
+}
+
+aside, #region-pre, .pagelayout-course #region-pre{
+	display: none;
+}
+
+#page-site-index #region-main, #page-course-category #region-main, #page-course-search #region-main, #page-mod-turnitintool--view #region-main, .pagelayout-admin #region-main, .pagelayout-base #region-main, .pagelayout-report #region-main, .pagelayout-standard #region-main, .pagelayout-incourse #region-main, #page-message-edit #region-main, .pagelayout-course #page-content{
+	-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+border: none;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+margin: inherit;
+background: #fff;
+font-family: serif;
+}
+
+.pagelayout-course #region-main {
+-moz-border-radius-topleft: 4px;
+-webkit-border-top-left-radius: 4px;
+border-top-left-radius: 4px;
+-moz-border-radius-bottomleft: 4px;
+-webkit-border-bottom-left-radius: 4px;
+border-bottom-left-radius: 4px;
+border-right: none;
+background: #fff;
+width: 100%;
+float: left;
+}
+
+// =====================================
+// REGION MAIN SCROLLBAR (WEBKIT)
+// =====================================
+#region-main div::-webkit-scrollbar {
+		-webkit-appearance: none;
+}
+
+#region-main div::-webkit-scrollbar:vertical {
+		width: 11px;
+}
+
+#region-main div::-webkit-scrollbar:horizontal {
+		height: 11px;
+}
+
+#region-main div::-webkit-scrollbar-thumb {
+		border-radius: 0px;
+		border: none; /* should match background, can't be transparent */
+		background-color: transparent;
+}
+
+
+
+
+// Cool shit
+h2, h3 {
+   page-break-after: avoid;
+}
+
+img {
+   max-width: 100% !important;
+}
+
+article {
+   page-break-before: always;
+}
+
+ul, img {
+   page-break-inside: avoid;
+}
+
+ * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+
+ a {
+      font-weight: bolder;
+      text-decoration: none;
+   }
+
+   a[href^=http]:after {
+      content:" <" attr(href) "> ";
+   }
+
+   a[href^="#"]:after {
+   content: "";
+}
+
+
+
+}
