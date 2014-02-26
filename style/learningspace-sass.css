@@ -905,8 +905,8 @@ ul ul, ul ol, ol ol, ol ul {
   margin: 0 0 1.3125rem 0; }
 
 li {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 24px;
   line-height: 1.5rem;
   letter-spacing: 0px; }

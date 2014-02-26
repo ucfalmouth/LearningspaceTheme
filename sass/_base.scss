@@ -145,10 +145,10 @@ ul ul, ul ol, ol ol, ol ul {
 }
 
 li{
-	@include x-rem(font-size, 16px);
+	@include x-rem(font-size, 14px);
 	@include x-rem(line-height, 24px);
 	letter-spacing: 0px;
-	//color: rgb(105, 105, 109);
+	
 }
 
 blockquote {
