@@ -1561,16 +1561,20 @@ padding-top: 0px;
 			display: block;
 			-webkit-box-shadow: none;
 			-moz-box-shadow: none;
-			font-family: $sansserif;
+			font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
 			margin: 11px 0;
 			font-size: 14px;
-			line-height: 16px;
+			line-height: 20px;
+			margin-right: 20px;
 			z-index: 0;
 			color: #acacac;
 			text-decoration: none;
 			text-shadow: none;
 			font-weight: 400;
 			text-align: left;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
 		}
 
 		li>p>a:hover {

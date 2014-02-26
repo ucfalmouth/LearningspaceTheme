@@ -2578,13 +2578,17 @@ input#id_submitbutton {
     font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
     margin: 11px 0;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
+    margin-right: 20px;
     z-index: 0;
     color: #acacac;
     text-decoration: none;
     text-shadow: none;
     font-weight: 400;
-    text-align: left; }
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
   .block_course_menu .block_tree li > p > a:hover {
     text-decoration: underline;
     text-shadow: none;
