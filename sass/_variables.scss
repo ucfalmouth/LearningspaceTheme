@@ -74,7 +74,7 @@ $bgcolor: #EBEBEB;
 	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#e9ebf2', endColorstr='#d4d5d8');
 	@include background-image(linear-gradient(#e9ebf2, #d4d5d8));
 	color: $lightbuttontext;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 %button-grey-hover{
