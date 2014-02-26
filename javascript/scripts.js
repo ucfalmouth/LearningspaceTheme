@@ -393,9 +393,9 @@ $('#responsive-menu-button').click(function(event){
 
 
 if ($('.path-course-view').length != 0){
-  if ($('.block_section').length != 0){
-    $('.block_section_warning').hide();
-    $('.sidr-class-block_section_warning ').hide();
+  if ($('.block_section').length == 0){
+    $('.block_section_warning').show();
+    $('.sidr-class-block_section_warning ').show();
   }
 }
 

@@ -2524,6 +2524,9 @@ input#id_submitbutton {
   list-style: none;
   line-height: 24px; }
 
+.block_section_warning {
+  display: none; }
+
 .sidr-class-block_section_warning {
   opacity: 0; }
 
