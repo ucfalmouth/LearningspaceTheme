@@ -141,7 +141,7 @@ a:hover{
 }
 
 ul ul, ul ol, ol ol, ol ul {
-	@include x-rem(margin, 0 0 21px 0);
+	@include x-rem(margin, 0 0 24px 1.5);
 }
 
 li{
