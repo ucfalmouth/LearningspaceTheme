@@ -13,7 +13,7 @@
 
         </div>
         <span id="credits">
-            <small>Learning Space. Lovingly created by <a href="">Educational Technology</a></small>
+            <small>Learning Space. Lovingly created by <a href="http://et.falmouth.ac.uk">Educational Technology</a></small>
         </span>
         <a id="fal-logo" href="http://falmouth.ac.uk/"></a>
     </div>
