@@ -2054,8 +2054,13 @@ div[role="main"]{
 
 
 .pagelayout-coursecategory div[role="main"]{
-	
+	padding-top: 0;
+
+	.courseboxes{
+		padding-top: 1.5em;
+	}	
 }
+
 .pagelayout-coursecategory {
 	//display: none; 
 }

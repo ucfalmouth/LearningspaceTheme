@@ -4319,6 +4319,11 @@ body.mceContentBody {
 div[role="main"] {
   padding-top: 1.5em; }
 
+.pagelayout-coursecategory div[role="main"] {
+  padding-top: 0; }
+  .pagelayout-coursecategory div[role="main"] .courseboxes {
+    padding-top: 1.5em; }
+
 .pagelayout-standard center {
   text-align: right;
   margin: -41px 20px 40px 0; }
