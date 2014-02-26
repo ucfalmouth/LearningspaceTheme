@@ -4439,3 +4439,13 @@ div[role="main"] {
 
 #staff-email-link, #student-email-link {
   display: none; }
+
+.pagelayout-base input[value="Continue"] {
+  margin-top: 9px; }
+
+.pagelayout-base #notice {
+  width: 100%;
+  margin-bottom: 160px; }
+
+.pagelayout-base #region-pre {
+  display: none; }
