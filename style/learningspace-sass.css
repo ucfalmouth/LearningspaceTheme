@@ -87,7 +87,10 @@ td.submit input:active,
 input#id_submitbutton.active,
 input#id_submitbutton2.active:active,
 .path-admin .buttons input[type="submit"].active,
-td.submit input.active {
+td.submit input.active, #notice .singlebutton + .singlebutton input,
+.submit.buttons input[name="cancel"], #notice .singlebutton + .singlebutton input:hover,
+.submit.buttons input[name="cancel"]:hover, #notice .singlebutton + .singlebutton input:active,
+.submit.buttons input[name="cancel"]:active, input[value="Continue"], input[value="Continue"]:hover, input[value="Continue"]:active {
   border: 1px solid #b9babd;
   background: none;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1abc9c), color-stop(100%, #27ae60));
@@ -143,7 +146,10 @@ input[type="reset"]:active, .btn:focus,
 input[type="password"] + input[type="submit"]:focus, input.form-submit:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
-input[type="reset"]:focus, .btn.btn-secondary, .btn.btn-secondary:visited, .section-navigation.mdl-bottom > span > a.btn-secondary:visited, .btn.btn-secondary:hover, .section-navigation.mdl-bottom > span > a.btn-secondary:hover, .btn.btn-secondary:active, .section-navigation.mdl-bottom > span > a.btn-secondary:active {
+input[type="reset"]:focus, .btn.btn-secondary, .btn.btn-secondary:visited, .section-navigation.mdl-bottom > span > a.btn-secondary:visited, .btn.btn-secondary:hover, .section-navigation.mdl-bottom > span > a.btn-secondary:hover, .btn.btn-secondary:active, .section-navigation.mdl-bottom > span > a.btn-secondary:active, #notice .singlebutton + .singlebutton input,
+.submit.buttons input[name="cancel"], #notice .singlebutton + .singlebutton input:hover,
+.submit.buttons input[name="cancel"]:hover, #notice .singlebutton + .singlebutton input:active,
+.submit.buttons input[name="cancel"]:active {
   border: 1px solid #bbbcbf;
   background-color: #ecedf0;
   background: #ecedf0;
@@ -162,7 +168,8 @@ input[type="password"] + input[type="submit"]:hover,
 button, input.form-submit:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
-input[type="reset"]:hover, .btn.btn-secondary:hover {
+input[type="reset"]:hover, .btn.btn-secondary:hover, #notice .singlebutton + .singlebutton input:hover,
+.submit.buttons input[name="cancel"]:hover {
   background-color: #ecedf0;
   background: #ecedf0;
   filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#edeff5', endColorstr='#dddde0');
@@ -178,7 +185,8 @@ input[type="password"] + input[type="submit"]:active,
 button, input.form-submit:active,
 input[type="button"]:active,
 input[type="submit"]:active,
-input[type="reset"]:active, .btn.btn-secondary:active {
+input[type="reset"]:active, .btn.btn-secondary:active, #notice .singlebutton + .singlebutton input:active,
+.submit.buttons input[name="cancel"]:active {
   background-color: #ecedf0;
   background: #ecedf0;
   filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#d4d5d8', endColorstr='#e9ebf2');
@@ -232,7 +240,7 @@ td.submit input:active,
 input#id_submitbutton.active,
 input#id_submitbutton2.active:active,
 .path-admin .buttons input[type="submit"].active,
-td.submit input.active {
+td.submit input.active, input[value="Continue"], input[value="Continue"]:hover, input[value="Continue"]:active {
   border: 1px solid #1c7aa6;
   background-color: #249cd5;
   background: #249cd5;
@@ -255,7 +263,7 @@ td.submit input:hover,
 input#id_submitbutton.hover,
 input#id_submitbutton2.active:hover,
 .path-admin .buttons input[type="submit"].hover,
-td.submit input.hover {
+td.submit input.hover, input[value="Continue"]:hover {
   background-color: #249cd5;
   background: #249cd5;
   filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#5eb7e0', endColorstr='#4da3cc');
@@ -275,7 +283,7 @@ td.submit input:active,
 input#id_submitbutton.active,
 input#id_submitbutton2.active:active,
 .path-admin .buttons input[type="submit"].active,
-td.submit input.active {
+td.submit input.active, input[value="Continue"]:active {
   background-color: #249cd5;
   background: #249cd5;
   filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#208cbf', endColorstr='#36a5d9');

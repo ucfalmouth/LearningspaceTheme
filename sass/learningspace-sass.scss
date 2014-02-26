@@ -2187,3 +2187,44 @@ font-size: 12px;
 #staff-email-link, #student-email-link{
 	display: none;
 }
+
+#notice .singlebutton+.singlebutton input, 
+.submit.buttons input[name="cancel"]{
+	@extend %button;
+	@extend %button-grey;
+}
+
+#notice .singlebutton+.singlebutton input:hover, 
+.submit.buttons input[name="cancel"]:hover{
+	@extend %button;
+	@extend %button-grey;
+	@extend %button-grey-hover;
+}
+
+#notice .singlebutton+.singlebutton input:active, 
+.submit.buttons input[name="cancel"]:active{
+	@extend %button;
+	@extend %button-grey;
+	@extend %button-grey-active;
+}
+
+input[value="Continue"]{
+	@extend %button;
+	@extend %button-blue;
+}
+
+input[value="Continue"]:hover{
+	@extend %button;
+	@extend %button-blue;
+	@extend %button-blue-hover;
+}
+
+input[value="Continue"]:active{
+	@extend %button;
+	@extend %button-blue;
+	@extend %button-blue-active;
+}
+
+
+
+
