@@ -2238,3 +2238,19 @@ input[value="Continue"]:active{
 	display: none;
 }
 
+.text_to_html{
+	@include x-rem(margin, 0 0 12px 0);
+	font-family: $sansserif;
+	@include x-rem(font-size, 14px);
+	@include x-rem(line-height, 24px);
+	letter-spacing: 0px;
+	font-style: normal;
+	font-weight: 400;
+	display: block;
+	letter-spacing: 0px;
+	color: $textcolour;
+
+	@media (max-width: 850px){
+		font-size: 16px;
+	}
+}
