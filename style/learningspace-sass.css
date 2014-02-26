@@ -2655,6 +2655,13 @@ input#id_submitbutton {
 .block.list_block .unlist > li > .column {
   padding-right: 0px; }
 
+.block.block_section .unlist > li > .column {
+  padding-right: 0px;
+  border-bottom: 1px solid #e6ebee;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  width: 100%; }
+
 img.icon {
   width: 18px;
   height: 18px;
