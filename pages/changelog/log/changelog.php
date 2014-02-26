@@ -61,7 +61,7 @@
 
   <div id="page" class="container-fluid">
     <section id="region-main">
-    <h1>Changelog</h1>
+    <h1>Release notes</h1>
     <p>These release notes are intended as a brief overview of new features and recent changes to Learning Space. The links provide further detail on rationale behind change. If you are interested in finer detail, please check the <a href="https://github.com/ucfalmouth/issues/pulse/monthly#issues">changelog</a>.</p>
 
 <p>If you have any further questions, please contact <a href="mailto:etsupport@falmouth.ac.uk">etsupport@falmouth.ac.uk</a>.</p>
