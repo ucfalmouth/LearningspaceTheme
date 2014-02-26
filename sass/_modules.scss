@@ -1693,12 +1693,18 @@ display: none;
 	padding-right: 0px;
 }
 
-.block.block_section .unlist > li > .column {
+.block.block_section .unlist > li  {
 	padding-right: 0px;
-	border-bottom: 1px solid $lighterbordercolour;
-	padding-bottom: 8px;
-	margin-bottom: 8px;
+	border-top: 1px solid $lighterbordercolour;
+	padding-top: 8px;
+	margin-top: 8px;
 	width: 100%;
+}
+
+.block.block_section .unlist > li:first-child{
+		border-top: none;
+	padding-top: 0px;
+	margin-top: 0px;
 }
 
 img.icon {
