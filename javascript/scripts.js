@@ -362,6 +362,7 @@ if(currentUserRole == "student"){
   //$('#student_context_block').show();
   //$('.block_settings').hide();
   $('.block_settings').find('#usersettings').hide();
+  $('#student-email-link').show();
 }
 
 else if(currentUserRole == "teacher"){
@@ -369,6 +370,7 @@ else if(currentUserRole == "teacher"){
   $('#fitem_id_format').hide();
   $('#fitem_id_hiddensections').hide();
   $('#fitem_id_coursedisplay').hide();
+  $('#staff-email-link').show();
 }
 
 else if(currentUserRole == "admin"){

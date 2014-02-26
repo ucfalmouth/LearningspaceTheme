@@ -307,15 +307,15 @@ class theme_learningspace_core_renderer extends core_renderer {
 
                     /*$dropdownitemhelp = "<li><a href=\"http://etsupport.freshdesk.com/\"><i class=\"icon-question-sign\"></i> Help</a></li>";*/
 
-                    $dropdownitemstudentemail = "<li><a href=\"http://studentmail.falmouth.ac.uk/\">Student Email</a></li>";
+                    $dropdownitemstudentemail = "<li id=\"student-email-link\"><a href=\"http://studentmail.falmouth.ac.uk/\">My Email</a></li>";
 
-                    $dropdownitemstaffemail = "<li><a href=\"http://mailspace.falmouth.ac.uk/\">Staff Email</a></li>";
+                    $dropdownitemstaffemail = "<li id=\"staff-email-link\"><a href=\"http://mailspace.falmouth.ac.uk/\">My Email</a></li>";
 
-                    $dropdownitemtimetable = "<li><a href=\"http://mytimetable.falmouth.ac.uk/\">My Timetable</a></li>";
+                    $dropdownitemtimetable = "<li ><a href=\"http://mytimetable.falmouth.ac.uk/\">My Timetable</a></li>";
 
                     $dropdownitemlogout = "<li class=\"divider\"></li><li><a href=\"$CFG->wwwroot/login/logout.php?sesskey=".sesskey()."\">".get_string('logout').'</a></li>';
                     
-                    $dropdownitems .= $usermenuheader.$dropdownitemmymodules.$dropdownitemtimetable.$dropdownitemmyprofile.$dropdownitemlogout;
+                    $dropdownitems .= $usermenuheader.$dropdownitemmymodules.$dropdownitemtimetable.$dropdownitemmyprofile.$dropdownitemstudentemail.$dropdownitemstaffemail.$dropdownitemlogout;
 
                     $dropdownmenu = $dropdownstart.$dropdownitems.$dropdownend;
 

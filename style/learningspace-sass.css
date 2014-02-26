@@ -4407,3 +4407,6 @@ div[role="main"] {
 
 .icon-info-sign {
   display: none !important; }
+
+#staff-email-link, #student-email-link {
+  display: none; }
