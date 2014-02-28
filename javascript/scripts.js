@@ -375,6 +375,9 @@ else if(currentUserRole == "teacher"){
 
 else if(currentUserRole == "admin"){
   $('#toggle-admin-settings').show();
+  $('#fitem_id_format').show();
+  $('#fitem_id_hiddensections').show();
+  $('#fitem_id_coursedisplay').show();
 }
 
 
