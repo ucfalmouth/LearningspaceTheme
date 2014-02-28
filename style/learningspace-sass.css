@@ -4467,3 +4467,6 @@ div[role="main"] {
   @media (max-width: 850px) {
     .text_to_html {
       font-size: 16px; } }
+
+div.btn-group.module-dropdown {
+  display: none; }
