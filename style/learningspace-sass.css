@@ -1823,7 +1823,7 @@ input[type="color"]::-ms-clear {
   text-align: left; }
 
 .loginbox {
-  margin: 50% 0 0 0;
+  margin: 25% 0 0 0;
   overflow: visible;
   text-align: left !important;
   width: 100%;
