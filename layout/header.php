@@ -100,7 +100,7 @@ echo $OUTPUT->doctype() ?>
                 <ul class="nav">
                     <li><a href="<?php echo $CFG->wwwroot;?>">My Modules</a></li>
                     
-                    <li><a class="menu-item-resources dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
+                    <li class="dropdown"><a class="menu-item-resources dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
                         <ul class="dropdown-menu">
                                 <li><a href="http://ask.fxplus.ac.uk/">ASK (Academic Skills)</a></li>
                                 <li><a href="http://www.falmouth.ac.uk/facilities/the-compass">The Compass</a></li>

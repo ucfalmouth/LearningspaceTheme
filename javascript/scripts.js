@@ -16,6 +16,19 @@ $(".block_section a").each(function() {
     }
   });
 
+  //Add Hover effect to menus
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).show();
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).hide();
+});
+
+$('.dropdown-menu').hover(function(){
+  $(this).closest('.dropdown').find('.dropdown-toggle').addClass("dropdown-hover");
+}, function(){
+  $(this).closest('.dropdown').find('.dropdown-toggle').removeClass("dropdown-hover");
+});
+
 
 $("body").fitVids();
 

@@ -225,7 +225,7 @@
 // =====================================
 
 #page{
-	padding-top: 72px;
+	padding-top: 80px;
 
 }
 
@@ -400,13 +400,13 @@
 	-moz-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
 	box-shadow: rgba(0,0,0,0.2) 0 1px 2px;*/
 
-	height:48px;
+	height:56px;
 
 padding-right: 0px;
 background: #2F393F;
 
-filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#38454c', endColorstr='#262e33');
-	@include background-image(linear-gradient(#38454c, #262e33));
+filter:none;
+background-image: none;
 
 border-bottom: none;
 
@@ -414,7 +414,7 @@ border-bottom: none;
 -moz-border-radius: 0;
 border-radius: 0;
 filter: none;
-padding: 0px 0px 0px;
+padding: 4px 0px 4px;
 -webkit-box-shadow: rgba(0,0,0,0.1) 0 1px 5px;
 -moz-box-shadow: rgba(0,0,0,0.1) 0 1px 5px;
 box-shadow: rgba(0,0,0,0.1) 0 1px 5px;
@@ -471,19 +471,25 @@ box-shadow: rgba(0,0,0,0.1) 0 1px 5px;
 	.brand, 
 	.nav>li>a {
 		text-shadow: none;
-		color: #C2C2C2;
-		font-weight: 400;
+		color: #A0A0A0;
+		font-weight: 600;
 		display: inline;
 		font-size: 14px;
-		padding: 1px 13px 15px 14px;
+		padding: 22px 13px 21px; 
 		margin-right: 0px;
+		height: 60px;
+	}
+
+	.nav>li>a:hover{
+		background: #263036;
+		text-decoration: none;
 	}
 
 	.brand{
 
-		font-weight: 600;
+		font-weight: 400;
 		letter-spacing: -1px;
-		font-size: 21px;
+		font-size: 24px;
 		padding: 4px 13px 18px 0px;
 	}
 
@@ -522,7 +528,7 @@ box-shadow: rgba(0,0,0,0.1) 0 1px 5px;
 }
 
 .navbar-fixed-top .navbar-inner .dropdown-menu{
-	margin: 0px 0 0;
+	margin: 4px 0 0;
 }
 
 .navbar .nav .open .dropdown-menu{
@@ -539,8 +545,8 @@ box-shadow: rgba(0,0,0,0.1) 0 1px 5px;
 }
 
 .navbar-inverse .nav>li>a:focus, .navbar-inverse .nav>li>a:hover {
-color: #999;
-text-decoration: underline;
+//color: #999;
+//text-decoration: underline;
 }
 
 .navbar .nav .dropdown-toggle .caret {

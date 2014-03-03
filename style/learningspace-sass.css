@@ -27,7 +27,7 @@
   margin: 0;
   margin: 0;
   background: #fff;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif; }
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif; }
 
 .btn, .section-navigation.mdl-bottom > span > a, #id_cancel,
 input[type="password"] + input[type="submit"],
@@ -120,7 +120,7 @@ td.submit input.active, #notice .singlebutton + .singlebutton input,
   transition: 0.25s;
   -webkit-backface-visibility: hidden;
   font-weight: 700;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
   filter: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -826,7 +826,7 @@ body {
   margin: 0;
   background: #ebebeb;
   background: #DFDFDF;
-  font-style: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
+  font-style: "Helvetica Neue", "helvetica", "arial", sans-serif;
   margin: 0px 0 0; }
 
 @media (min-width: 1441px) {
@@ -875,7 +875,7 @@ h3 {
 p {
   margin: 0 0 12px 0;
   margin: 0 0 0.75rem 0;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 24px;
@@ -970,7 +970,7 @@ textarea, textarea:hover, textarea:focus {
   padding-top: 3px; }
 
 select, input, button, textarea {
-  font: 100% "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif; }
+  font: 100% "Helvetica Neue", "helvetica", "arial", sans-serif; }
 
 label, input, button, select, textarea {
   font-size: 16px;
@@ -1021,7 +1021,7 @@ label, input, button, select, textarea {
   position: relative;
   z-index: 1;
   background: #fff;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif; }
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif; }
 
 @media (max-width: 850px) {
   aside {
@@ -1119,7 +1119,7 @@ label, input, button, select, textarea {
     width: 100%;
     margin-top: 0px; } }
 #page {
-  padding-top: 72px; }
+  padding-top: 80px; }
 
 @media (max-width: 850px) {
   #page {
@@ -1226,7 +1226,7 @@ label, input, button, select, textarea {
   margin: 11px 10px 0 0; }
 
 .navbar {
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif; }
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif; }
 
 .navbar-fixed-top .navbar-inner {
   /*height: 56px;
@@ -1242,21 +1242,17 @@ label, input, button, select, textarea {
   -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
   -moz-box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
   box-shadow: rgba(0,0,0,0.2) 0 1px 2px;*/
-  height: 48px;
+  height: 56px;
   padding-right: 0px;
   background: #2F393F;
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#38454c', endColorstr='#262e33');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #38454c), color-stop(100%, #262e33));
-  background-image: -webkit-linear-gradient(#38454c, #262e33);
-  background-image: -moz-linear-gradient(#38454c, #262e33);
-  background-image: -o-linear-gradient(#38454c, #262e33);
-  background-image: linear-gradient(#38454c, #262e33);
+  filter: none;
+  background-image: none;
   border-bottom: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   filter: none;
-  padding: 0px 0px 0px;
+  padding: 4px 0px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px;
@@ -1307,16 +1303,20 @@ label, input, button, select, textarea {
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
   text-shadow: none;
-  color: #C2C2C2;
-  font-weight: 400;
+  color: #A0A0A0;
+  font-weight: 600;
   display: inline;
   font-size: 14px;
-  padding: 1px 13px 15px 14px;
-  margin-right: 0px; }
+  padding: 22px 13px 21px;
+  margin-right: 0px;
+  height: 60px; }
+.navbar-inverse .nav > li > a:hover {
+  background: #263036;
+  text-decoration: none; }
 .navbar-inverse .brand {
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -1px;
-  font-size: 21px;
+  font-size: 24px;
   padding: 4px 13px 18px 0px; }
 .navbar-inverse .brand:hover {
   color: #E2E2E2; }
@@ -1342,7 +1342,7 @@ label, input, button, select, textarea {
   float: left; }
 
 .navbar-fixed-top .navbar-inner .dropdown-menu {
-  margin: 0px 0 0; }
+  margin: 4px 0 0; }
 
 .navbar .nav .open .dropdown-menu {
   filter: none; }
@@ -1353,10 +1353,6 @@ label, input, button, select, textarea {
   color: #999;
   background-color: none;
   background: none;
-  text-decoration: underline; }
-
-.navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover {
-  color: #999;
   text-decoration: underline; }
 
 .navbar .nav .dropdown-toggle .caret {
@@ -1546,7 +1542,7 @@ footer .container-fluid {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif; }
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif; }
   .alert > span, .pagelayout-incourse #intro > span {
     padding-left: 10px;
     display: block; }
@@ -1837,7 +1833,7 @@ input[type="color"]::-ms-clear {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 1px inset, rgba(0, 0, 0, 0.03) 0 0 3px 0;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 1px inset, rgba(0, 0, 0, 0.03) 0 0 3px 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 1px;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif; }
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif; }
 
 @media (max-width: 850px) {
   .loginbox {
@@ -2376,7 +2372,7 @@ input#id_submitbutton {
   border-radius: 3px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif; }
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif; }
   .block a {
     color: #acacac;
     line-height: 24px;
@@ -2565,7 +2561,7 @@ input#id_submitbutton {
     display: block;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
-    font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
+    font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
     padding-left: 20px;
     padding: 11px 0 11px 20px;
     margin: 1px 0 0 0;
@@ -2693,7 +2689,7 @@ img.icon {
   display: block;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
   padding: 11px 0 11px 21px;
   margin: 1px 0 0 -1px;
   background: #fff;
@@ -2948,7 +2944,7 @@ width: 94%;
   margin-top: 100px;
   padding: 18px 20px;
   margin-bottom: 20px;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
   background: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2999,7 +2995,7 @@ div#slideWrapper {
   display: block;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
   padding: 11px 0 11px 21px;
   margin: 1px 0 0 -1px;
   background: transparent;
@@ -3309,14 +3305,28 @@ blockquote > .icon-quote-left {
   padding: 5px 0;
   margin: 0px 0 0;
   list-style: none;
-  background-color: #262e33;
+  background-color: #263036;
   border: 1px solid #20282C;
-  border-top-right-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
   border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-top: none;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box; }
+
+.dropdown-hover {
+  background-color: #263036 !important;
+  color: #fff !important; }
 
 .dropdown-menu::after {
   border: none !important;
@@ -3402,7 +3412,17 @@ img.iconsmall {
   filter: none; }
 
 .dropdown-menu > li > a {
-  font-size: 14px; }
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 3px 10px; }
+
+.dropdown-menu li a:hover {
+  background-color: #2F393F;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
 
 .dropdown-menu > li > div > a {
   display: block;
@@ -3424,7 +3444,6 @@ img.iconsmall {
 .dropdown-menu li a:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #249cd5;
   background-image: none;
   background-repeat: repeat-x;
   filter: none; }
@@ -4453,7 +4472,7 @@ div[role="main"] {
 .text_to_html {
   margin: 0 0 12px 0;
   margin: 0 0 0.75rem 0;
-  font-family: "Helvetica Neue", "proxima-nova", "helvetica", "arial", sans-serif;
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 24px;
