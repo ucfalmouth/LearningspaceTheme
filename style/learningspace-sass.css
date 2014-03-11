@@ -2765,6 +2765,9 @@ img.icon {
 .navbar-inverse .nav > li > a.turn-edit-on, .sidr-class-turn-edit-on {
   display: block; }
 
+#instant-feedback-form {
+  display: none; }
+
 h1, h2.main, h2.main {
   margin: 0 0 8px 0;
   margin: 0 0 0.5rem 0; }
