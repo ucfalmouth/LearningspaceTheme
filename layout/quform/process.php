@@ -39,7 +39,7 @@ $config['email'] = true;
  *     'recipient2@example.com'
  * );
  */
-$config['recipients'] = 'etsupport@falmouth.ac.uk';
+$config['recipients'] = 'aaron.marr@falmouth.ac.uk';
 
 /**
  * Set the "From" address of the emails. You should set this to the contact
@@ -59,19 +59,19 @@ $config['recipients'] = 'etsupport@falmouth.ac.uk';
  *
  * $config['from'] = '%email%';
  */
-$config['from'] = '%email%';
+$config['from'] = 'etsupport@falmouth.ac.uk';
 
 /**
  * The subject of the notification email message. %first_name% will be replaced
  * with the form submitted value in the first_name field.
  */
-$config['subject'] = 'Message from %name%';
+$config['subject'] = 'Message from contact form';
 
 /**
  * Set the "Reply-To" email address of the notification email to
  * the email address submitted in the email field.
  */
-$config['replyTo'] = '%email%';
+$config['replyTo'] = 'etsupport@falmouth.ac.uk';
 
 /**
  * The file containing the HTML body of the notification email.
@@ -96,12 +96,12 @@ $config['autoreply'] = false;
  *
  * $config['autoreplyRecipient'] = array('%email%' => '%name%');
  */
-$config['autoreplyRecipient'] = '%email%';
+//$config['autoreplyRecipient'] = '%email%';
 
 /**
  * The subject of the autoreply email
  */
-$config['autoreplySubject'] = 'Thanks for your message, %name%';
+$config['autoreplySubject'] = 'Thanks for your message';
 
 /**
  * Set the "From" address of the autoreply email.
@@ -176,58 +176,25 @@ $config['extra']['IP address'] = Quform::getIPAddress();
 /** FORM ELEMENT CONFIGURATION **/
 
 /**
- * Configure the first name element
+ * Configure the message element
  * Filters: Trim
  * Validators: Required
  */
-$name = new Quform_Element('name', 'Name');
-$name->addFilter('trim');
-$name->addValidator('required');
-$form->addElement($name);
-
-/**
- * Configure the email address element
- * Filters: Trim
- * Validators: Required, Email
- */
-$email = new Quform_Element('email', 'Email address');
-$email->addFilter('trim');
-$email->addValidators(array('required', 'email'));
-$form->addElement($email);
-
-/**
- * Configure the query reason element
- * Filters: Trim
- * Validators: Required, Email
- */
-$querysubject = new Quform_Element('querysubject', 'Subject');
-$querysubject->addFilter('trim');
-$querysubject->addValidators(array('required'));
-$form->addElement($querysubject);
+$formtask = new Quform_Element('form-task', 'Task');
+$formtask->addFilter('trim');
+$formtask->addValidator('required');
+$form->addElement($formtask);
 
 /**
  * Configure the message element
  * Filters: Trim
  * Validators: Required
  */
-$message = new Quform_Element('message', 'Message');
-$message->addFilter('trim');
-$message->addValidator('required');
-$form->addElement($message);
+$formproblem = new Quform_Element('form-problem', 'Reported Problem');
+$formproblem->addFilter('trim');
+$formproblem->addValidator('required');
+$form->addElement($formproblem);
 
-/**
- * Configure the CAPTCHA element
- * Filters: Trim
- * Validators: Required, Identical
- */
-$captcha = new Quform_Element('type_the_word', 'Type the word');
-$captcha->addFilter('trim');
-$captcha->addValidator('required');
-$captcha->addValidator('identical', array('token' => 'catch'));
-$captcha->setIsHidden(true);
-$form->addElement($captcha);
-
-/** END FORM ELEMENT CONFIGURATION **/
 
 function process(Quform $form, array &$config)
 {
