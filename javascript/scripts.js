@@ -133,6 +133,24 @@ if($('.pagelayout-coursecategory').length != 0){
   });
 }
 
+// append section 1 to module links
+if($('.pagelayout-frontpage').length != 0){
+  $("div[role=\"main\"] a").each(function(){
+    var link = $(this).attr("href");
+    var appendedLink = link + "&section=1";
+    $(this).attr("href", appendedLink);
+  });
+}
+
+// append section 1 to module links
+if($('.pagelayout-standard').length != 0){
+  $("div[role=\"main\"] a").each(function(){
+    var link = $(this).attr("href");
+    var appendedLink = link + "&section=1";
+    $(this).attr("href", appendedLink);
+  });
+}
+
   document.createElement('header');
   document.createElement('nav');
   document.createElement('section');
