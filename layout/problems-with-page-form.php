@@ -1,4 +1,4 @@
-<h3><a id="display-instant-feedback-form" href="#">Problems with this page?</a></h3>
+<a id="display-instant-feedback-form" href="#">Problems with this page?</a>
 
 <!-- To copy the form HTML, start here -->
 
