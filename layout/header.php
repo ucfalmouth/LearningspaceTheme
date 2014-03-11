@@ -188,10 +188,10 @@ echo $OUTPUT->doctype() ?>
     if (!has_capability('moodle/course:viewhiddensections', $coursecontext)) {
         echo "<div data-role=\"student\" id=\"userrole\" style=\"display:none\">Role is ".$role."</div>";
     } 
-    else if (has_capability('moodle/course:viewhiddensections', $coursecontext) && $role != "ET") {
+    if (has_capability('moodle/course:viewhiddensections', $coursecontext) && $role != "ET") {
         echo "<div data-role=\"teacher\" id=\"userrole\" style=\"display:none\">Role is ".$role."</div>";
     } 
-    else if (has_capability('moodle/course:viewhiddensections', $coursecontext) && $role == "ET") {
+    if(has_capability('moodle/course:viewhiddensections', $coursecontext) && $role == "ET") {
         echo "<div data-role=\"admin\" id=\"userrole\" style=\"display:none\">Role is ".$role."</div>";
     }
 ?>
