@@ -180,6 +180,51 @@ $config['extra']['IP address'] = Quform::getIPAddress();
  * Filters: Trim
  * Validators: Required
  */
+$formcurrentpage = new Quform_Element('form-currentpage', 'Current page');
+$formcurrentpage->addFilter('trim');
+$form->addElement($formcurrentpage);
+
+/**
+ * Configure the message element
+ * Filters: Trim
+ * Validators: Required
+ */
+$formfirstname = new Quform_Element('form-firstname', 'First name');
+$formfirstname->addFilter('trim');
+$form->addElement($formfirstname);
+
+/**
+ * Configure the message element
+ * Filters: Trim
+ * Validators: Required
+ */
+$formlastname = new Quform_Element('form-lastname', 'Last name');
+$formlastname->addFilter('trim');
+$form->addElement($formlastname);
+
+/**
+ * Configure the message element
+ * Filters: Trim
+ * Validators: Required
+ */
+$formusername = new Quform_Element('form-username', 'User name');
+$formusername->addFilter('trim');
+$form->addElement($formusername);
+
+/**
+ * Configure the message element
+ * Filters: Trim
+ * Validators: Required
+ */
+$formemail = new Quform_Element('form-email', 'Email');
+$formemail->addFilter('trim');
+$form->addElement($formemail);
+
+/**
+ * Configure the message element
+ * Filters: Trim
+ * Validators: Required
+ */
 $formtask = new Quform_Element('form-task', 'Task');
 $formtask->addFilter('trim');
 $formtask->addValidator('required');
@@ -195,6 +240,14 @@ $formproblem->addFilter('trim');
 $formproblem->addValidator('required');
 $form->addElement($formproblem);
 
+/**
+ * Configure the message element
+ * Filters: Trim
+ * Validators: Required
+ */
+$formallowreply = new Quform_Element('form-allow-reply', 'Allow reply?');
+$formallowreply->addFilter('trim');
+$form->addElement($formallowreply);
 
 function process(Quform $form, array &$config)
 {
