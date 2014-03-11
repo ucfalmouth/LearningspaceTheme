@@ -873,7 +873,7 @@ if ( typeof define === 'function' && define.amd ) {
 
 
 //----------------------------------------------------------
-// Inboxtable.js
+// Inboxtable.js (TurnItIn)
 //----------------------------------------------------------
 (function($){
     $.fn.inboxTable = function( uid, displayusi, turnitintool_datatables_strings ) {
@@ -1042,7 +1042,7 @@ if ( typeof define === 'function' && define.amd ) {
 })(jQuery);
 
 //----------------------------------------------------------
-// Datatables.js
+// Datatables.js (TurnItIn)
 //----------------------------------------------------------
 /*
  * File:        jquery.dataTables.min.js
@@ -1205,7 +1205,7 @@ l.ext})(jQuery,window,document,undefined);
 
 
 //----------------------------------------------------------
-// Datatables-plugins.js
+// Datatables-plugins.js (TurnItIn)
 //----------------------------------------------------------
 jQuery.fn.dataTableExt.oApi.fnSetFilteringDelay = function ( oSettings, iDelay ) {
     var _that = this;
