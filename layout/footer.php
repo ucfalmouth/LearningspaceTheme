@@ -24,7 +24,7 @@
 <!-- End of body html -->
 
 </div><!-- wrapper -->
-<!--<?php if (!empty($PAGE->theme->settings->enablejquery)) {?>-->
+
 </div>
 
 <script >
