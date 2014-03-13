@@ -27,9 +27,6 @@
 <!--<?php if (!empty($PAGE->theme->settings->enablejquery)) {?>-->
 </div>
 
-<script src="<?php echo $CFG->wwwroot;?>/theme/learningspace/javascript/plugins-ck.js"></script>
-<script src="<?php echo $CFG->wwwroot;?>/theme/learningspace/javascript/scripts-ck.js"></script>
-
 <script >
 $(document).ready(function() {
 $(".aaronclick").click(function() {
