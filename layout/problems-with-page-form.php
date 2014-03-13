@@ -95,3 +95,20 @@
                     </div>
                 </form>
             </div>
+            <br />
+            <p><strong>Last updated:</strong> 
+
+            <?php //print_r($PAGE->); 
+                //$last_mod = ($COURSE->timemodified); 
+                //echo date("dS M Y", $last_mod);
+            ?>
+            
+            </p>
+
+
+
+
+
+
+
+
