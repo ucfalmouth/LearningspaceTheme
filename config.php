@@ -152,4 +152,4 @@ if ( strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 8') || strpos($_SERVER['HTTP_USER
     $THEME->javascripts[] = 'html5shiv';
 }
 
-$THEME->javascripts_footer = array();
+$THEME->javascripts_footer = array('plugins-ck', 'scripts-ck');
