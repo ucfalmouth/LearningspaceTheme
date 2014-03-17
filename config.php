@@ -15,7 +15,7 @@ $THEME->yuicssmodules = array();
 $THEME->name = 'learningspace';
 $THEME->parents = array('bootstrap');
 $THEME->sheets = array('editor', 'moodle', 'jquery.sidr.dark', 'learningspace-sass', 'bootstrap', 'introjs');
-$THEME->supportscssoptimisation = false;
+$THEME->supportscssoptimisation = true;
 
 
 

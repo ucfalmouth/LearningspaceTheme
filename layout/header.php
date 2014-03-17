@@ -54,12 +54,14 @@ echo $OUTPUT->doctype() ?>
 
 
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
-    <script type="text/javascript" src="//use.typekit.net/ull6bqj.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <?php echo $OUTPUT->standard_head_html() ?>
+    
+    
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="<?php echo $CFG->wwwroot; ?>/theme/learningspace/style/print.css" media="print" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <?php echo $OUTPUT->standard_head_html() ?>
+    <script type="text/javascript" src="//use.typekit.net/ull6bqj.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script>
     /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-csstransforms3d-shiv-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-load
