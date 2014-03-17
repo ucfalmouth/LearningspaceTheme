@@ -37,13 +37,13 @@ $(document).ready(function() {
               
               // add 3 0's
 
-              // Today 15:19
-              var next = 1395129978000;
+              var next = 1395738000000;
+              
 
               // Midnight 16th Oct, 2013
               var now = new Date().getTime();
 
-              var prev = 1393315391000;
+              var prev = 1395129978000;
 
                 var msPerMinute = 60 * 1000;
                 var msPerHour = msPerMinute * 60;
