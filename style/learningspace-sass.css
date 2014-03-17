@@ -886,7 +886,7 @@ p {
   font-weight: 400;
   display: block;
   letter-spacing: 0px;
-  color: #5c5c5c; }
+  color: #505050; }
   @media (max-width: 850px) {
     p {
       font-size: 16px; } }
@@ -2601,7 +2601,7 @@ input#id_submitbutton {
     color: #249cd5; }
   .block_course_menu .block_tree li > p > a.active_tree_node {
     text-shadow: none;
-    color: #5c5c5c;
+    color: #505050;
     z-index: 1;
     font-weight: 400 !important; }
 
@@ -2697,7 +2697,7 @@ img.icon {
   font-size: 14px;
   line-height: 16px;
   z-index: 500;
-  color: #5c5c5c !important;
+  color: #505050 !important;
   text-decoration: none;
   text-shadow: none;
   font-weight: 500;
@@ -2705,7 +2705,7 @@ img.icon {
 
 .show-all-active:hover {
   text-decoration: none !important;
-  color: #5c5c5c;
+  color: #505050;
   cursor: pointer !important; }
 
 .active_tree_node {
@@ -4483,7 +4483,7 @@ div[role="main"] {
   font-weight: 400;
   display: block;
   letter-spacing: 0px;
-  color: #5c5c5c; }
+  color: #505050; }
   @media (max-width: 850px) {
     .text_to_html {
       font-size: 16px; } }
