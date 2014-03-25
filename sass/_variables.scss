@@ -173,7 +173,7 @@ $bgcolor: #EBEBEB;
 }
 
 %form{
-	@include x-rem(font-size, 16px);
+	@include x-rem(font-size, 15px);
 	background-color: #fcfcfc; 
 	@include x-rem(padding, 0px 10px 0 10px);
 	height: 34px;
@@ -188,19 +188,19 @@ $bgcolor: #EBEBEB;
 
 %form-hover{
 	border: 1px solid #bbbbbb;
-	@include x-rem(font-size, 16px);
+	@include x-rem(font-size, 15px);
 }
 
 %form-focus{
 	border: 1px solid #aaaaaa;
 	@include box-shadow(none);
-	@include x-rem(font-size, 16px);
+	@include x-rem(font-size, 15px);
 }
 
 %headingstyles{
 	color: $headingcolor;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     @include x-rem(margin, 0 0 8px 0);
     letter-spacing: 0px;
 }

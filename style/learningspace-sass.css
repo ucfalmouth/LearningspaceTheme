@@ -407,8 +407,8 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus, .uneditable-input:focus {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
   background-color: #fcfcfc;
   padding: 0 10px 0 10px;
   padding: 0 0.625rem 0 0.625rem;
@@ -440,8 +440,8 @@ input[type="tel"]:hover,
 input[type="color"]:hover,
 .uneditable-input:hover {
   border: 1px solid #bbbbbb;
-  font-size: 16px;
-  font-size: 1rem; }
+  font-size: 15px;
+  font-size: 0.9375rem; }
 
 textarea:focus,
 input[type="text"]:focus,
@@ -462,13 +462,13 @@ input[type="color"]:focus, .uneditable-input:focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  font-size: 16px;
-  font-size: 1rem; }
+  font-size: 15px;
+  font-size: 0.9375rem; }
 
 h1, h2.main, h2, h3 {
   color: #4e4e4e;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 0 8px 0;
   margin: 0 0 0.5rem 0;
   letter-spacing: 0px; }
@@ -877,8 +877,8 @@ p {
   margin: 0 0 12px 0;
   margin: 0 0 0.75rem 0;
   font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 24px;
   line-height: 1.5rem;
   letter-spacing: 0px;
@@ -903,7 +903,7 @@ a {
 
 h1 a, h2.main a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
-  font-weight: 300; }
+  font-weight: 400; }
 
 a:hover {
   color: #249cd5;
@@ -4239,7 +4239,7 @@ margin-top: 90px;
   margin-bottom: 1rem;
   width: 100%;
   clear: left;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .coursebox ul.teachers {
   margin: 11px 0 0; }
@@ -4277,7 +4277,7 @@ margin-top: 90px;
 .coursebox > .info > .name a {
   background: none;
   background-image: none;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .coursebox ul, .coursebox ol {
   padding: 0;
@@ -4490,3 +4490,19 @@ div[role="main"] {
 
 div.btn-group.module-dropdown {
   display: none; }
+
+#display-instant-feedback-form {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  clear: both;
+  padding-top: 48px;
+  padding-top: 3rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
+
+#form-allow-reply + p {
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 25px;
+  margin-top: -16px; }

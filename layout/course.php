@@ -32,7 +32,9 @@
     <?php echo $coursecontentheader; ?>
     <?php echo $OUTPUT->main_content() ?>
     <?php echo $coursecontentfooter; ?>
-    
+
+   <?php include 'problems-with-page-form.php' ?>
+
     </section>
 
 <?php if ($layout !== 'content-only') {

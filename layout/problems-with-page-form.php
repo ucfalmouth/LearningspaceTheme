@@ -4,6 +4,8 @@
 
             <div id="instant-feedback-form" class="quform-outer quform-theme-light-light section-contact__form">
             <h1>Help us improve Learning Space</h1>
+            <p>Completing the following will help us make improvements. 
+</p>
                 <form class="quform" action="<?php echo $CFG->wwwroot;?>/theme/learningspace/layout/quform/process.php" method="post" enctype="multipart/form-data" onclick="">
                     <div class="quform-inner">
                             <div class="quform-elements">
@@ -56,7 +58,7 @@
                         <div class="quform-element quform-element-textarea quform-huge">
                             <div class="quform-spacer">
                                 <div class="quform-input">
-                                    <textarea id="form-task" name="form-task"  placeholder="What were you doing?" style="height: 130px;"></textarea>
+                                    <input type="text" id="form-task" name="form-task"  placeholder="What were you trying to do?" />
                                 </div>
                             </div>
                         </div>
@@ -66,7 +68,7 @@
                         <div class="quform-element quform-element-textarea quform-huge">
                             <div class="quform-spacer">
                                 <div class="quform-input">
-                                    <textarea id="form-problem" name="form-problem"  placeholder="What went wrong?" style="height: 130px;"></textarea>
+                                    <input type="text" id="form-problem" name="form-problem"  placeholder="What went wrong?" />
                                 </div>
                             </div>
                         </div>
@@ -77,7 +79,7 @@
                         <div class="quform-element quform-element-textarea quform-huge">
                             <div class="quform-spacer">
                                 <div class="quform-input">
-                                    <input type="checkbox" name="form-allow-reply" id="form-allow-reply" value="I don't mind being contacted"> Tick this to be contacted us once we have resolved the issue. This helps us make the Learning Space better. We will only ever contact you with regard to this partcular issue. We will never, ever spam you.<br>
+                                    <input type="checkbox" name="form-allow-reply" id="form-allow-reply" value="I don't mind being contacted"> <p>Tick here if you are willing to test a solution when we have one. No spam.</p><br>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +88,7 @@
                         <!-- Begin Submit button -->
                         <div class="quform-submit">
                             <div class="quform-submit-inner">
-                                <button type="submit" class="btn btn-primary" value="Send"><span>Send</span></button>
+                                <button type="submit" class="btn btn-primary" style="padding: 0.5rem 2rem;" value="Send"><span>Send</span></button>
                             </div>
                             <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
                         </div>
@@ -96,7 +98,7 @@
                 </form>
             </div>
             <br />
-            <p><strong>Last updated:</strong> 
+           
 
             <?php //print_r($PAGE->); 
                 //$last_mod = ($COURSE->timemodified); 

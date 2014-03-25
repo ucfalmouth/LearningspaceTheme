@@ -1891,7 +1891,7 @@ font-size: 24px;
 margin-bottom: 1rem;
 width: 100%;
 clear: left;
-font-weight: 300;
+font-weight: 400;
 }
 
 .coursebox ul.teachers {
@@ -1937,7 +1937,7 @@ background-image: none;
 .coursebox>.info>.name a{
 	background: none;
 	background-image: none;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .coursebox ul, .coursebox ol {
@@ -2274,4 +2274,26 @@ input[value="Continue"]:active{
 
 div.btn-group.module-dropdown {
 	display: none;
+}
+
+#display-instant-feedback-form{
+	display: block;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	clear: both;
+
+	@include x-rem(padding-top, 3);
+
+	@include x-rem(margin-bottom, 1);
+}
+
+
+
+#form-allow-reply + p{
+font-size: 12px;
+line-height: 16px;
+
+margin-left: 25px;
+margin-top: -16px;
+
 }
