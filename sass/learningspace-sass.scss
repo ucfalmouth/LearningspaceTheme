@@ -2276,10 +2276,14 @@ div.btn-group.module-dropdown {
 	display: none;
 }
 
+.pagelayout-course #display-instant-feedback-form{
+	border-top: 1px solid #ccc;
+}
+
 #display-instant-feedback-form{
 	display: block;
 	width: 100%;
-	border-top: 1px solid #ccc;
+	
 	clear: both;
 
 	@include x-rem(padding-top, 3);
@@ -2287,7 +2291,13 @@ div.btn-group.module-dropdown {
 	@include x-rem(margin-bottom, 1);
 }
 
+#instant-feedback-form{
+	padding-bottom: 20px;
+}
 
+.qform{
+	padding-right: 20px;
+}
 
 #form-allow-reply + p{
 font-size: 12px;

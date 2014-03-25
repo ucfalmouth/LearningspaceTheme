@@ -23,6 +23,7 @@
 
 
     <?php echo $coursecontentfooter; ?>
+     <?php include 'problems-with-page-form.php' ?>
     </section>
 
 
