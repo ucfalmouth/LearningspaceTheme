@@ -37,7 +37,7 @@ $(document).ready(function() {
               
               // add 3 0's
 
-              var next = 1396429200000;
+              var next = 1395833474000;
               
 
               // Midnight 16th Oct, 2013
@@ -55,58 +55,72 @@ $(document).ready(function() {
                 difference = Math.abs(difference);
 
                 var howLong = "";
-                
-                if (difference < msPerMinute) {
-                     timeToGo = Math.round(difference/1000) + ' seconds until the next update';  
-                }
-                
-                else if (difference < msPerHour) {
-                     timeToGo = Math.round(difference/msPerMinute) + ' minutes until the next update';   
-                }
-                
-                else if (difference < msPerDay ) {
-                     timeToGo = Math.round(difference/msPerHour ) + ' hours until the next update';  
-                }
 
-                else if (difference < msPerMonth) {
+                if (now < next){
+                  if (difference < msPerMinute) {
+                     timeToGo = Math.round(difference/1000) + ' seconds until the next update';  
+                  }
+                
+                  else if (difference < msPerHour) {
+                     timeToGo = Math.round(difference/msPerMinute) + ' minutes until the next update';   
+                  }
+                
+                  else if (difference < msPerDay ) {
+                     timeToGo = Math.round(difference/msPerHour ) + ' hours until the next update';  
+                  }
+
+                  else if (difference < msPerMonth) {
                      timeToGo = Math.round(difference/msPerDay) + ' days until the next update';  
-                }
+                  }
                 
-                else if (difference < msPerYear) {
+                  else if (difference < msPerYear) {
                      timeToGo = Math.round(difference/msPerMonth) + ' months until the next update';  
-                }
+                  }
                 
-                else {
+                  else {
                      timeToGo = Math.round(difference/msPerYear ) + ' years until the next update'; 
-                }
+                  }
+                } else {
+                  timeToGo = "No further updates";
+                } 
+                
+                
 
                 $('#LSUpdateDisplays').append('<p class="timeToGo">'+timeToGo+'</p>');
 
 
                 var amount = (now - prev) / (next - prev) * 100;
 
-                var archtype = Raphael("updates-clock-canvas", 30, 30);
-                archtype.customAttributes.arc = function (xloc, yloc, value, total, R) {
-                var alpha = 360 / total * value,
+                console.log(amount);
+
+                if (amount > 0){
+                  var archtype = Raphael("updates-clock-canvas", 30, 30);
+                 archtype.customAttributes.arc = function (xloc, yloc, value, total, R) {
+                 var alpha = 360 / total * value,
                   a = (90 - alpha) * Math.PI / 180,
                   x = xloc + R * Math.cos(a),
                   y = yloc - R * Math.sin(a),
                   path;
-              if (total == value) {
+                  if (total == value) {
                   path = [
                       ["M", xloc, yloc - R],
                       ["A", R, R, 0, 1, 1, xloc - 0.01, yloc - R]
                   ];
-              } else {
-                  path = [
-                      ["M", xloc, yloc - R],
-                      ["A", R, R, 0, +(alpha > 180), 1, x, y]
-                  ];
-              }
-              return {
-                  path: path
-              };
-          };
+                  } else {
+                      path = [
+                          ["M", xloc, yloc - R],
+                          ["A", R, R, 0, +(alpha > 180), 1, x, y]
+                      ];
+                  }
+                  return {
+                      path: path
+                  };
+                 };
+                } else {
+                  return 0;
+                }
+
+                
 
           //make an arc at 50,50 with a radius of 30 that grows from 0 to 40 of 100 with a bounce
           var my_arc = archtype.path().attr({
