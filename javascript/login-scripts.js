@@ -2,7 +2,6 @@ $(document).ready(function() {
 
   // Login Box Title
   $('.loginbox h2').text('Log In');
-
   $(".loginbox").find('.forgetpass a').text('Problems logging in?');
   $('#username').attr("placeholder", "Username");
   $('#password').attr("placeholder", "Password");

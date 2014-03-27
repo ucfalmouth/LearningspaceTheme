@@ -121,23 +121,24 @@ echo $OUTPUT->doctype() ?>
             <p id="studentvalidate" class="  alert-danger"><i class="fa fa-exclamation-triangle"></i> No need to use "Student\"</p>
                 <?php echo $coursecontentheader; ?>
                 <?php echo $OUTPUT->main_content() ?>
+                
                 <?php echo $coursecontentfooter; ?>
 
               <!--  <a href="#contact-form-modal" class="work-here btn pull-right" data-toggle="modal"><i class="icon-heart"></i> Your work here?</a>-->
 
 
-
+              <!--<a href="#myModal" data-toggle="modal" id="" class="btn btn-large btn-primary"><span>Awesome new features!</span></a>-->
             </section><!-- <- End #region-main -->
 
             <!--<div id="orientation-block" class="span8">
                 <div class="row-fluid">
-                    <a href="#myModal" data-toggle="modal" id="launch-intro" class="span6 btn btn-large btn-primary"><i class="icon-play-circle"></i><span>Getting Started</span></a>
+                    
                     <h2 class="span6">Welcome to the new Learning Space.</h2>
                 </div>
                 <hr />
                 <a href="/theme/learningspace/pages/finder/course/course-finder.html" class="btn"><i class="icon-search"></i> Course finder </a>
                 <a style="float:right;" href="http://learningspace.falmouth.ac.uk/mod/choice/view.php?id=9550" class="btn"> Staff Learning Space Training </a>
-            </div> -->
+            </div>--> 
 
             
 
