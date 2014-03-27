@@ -12,12 +12,12 @@ $(document).ready(function() {
   // ------------------------------------------------------------------------- 
   // Duration is the amount of time in between slides,
   // and fade is value that determines how quickly the next image will fade in
-  $('.login-page').backstretch([
+  /*$('.login-page').backstretch([
       //"http://localhost:8888/learningspace/theme/learningspace/img/tumblr_m8ifzcPZzf1rrwb6to1_500.gif", 
       //"http://learn-dev.falmouth.ac.uk/theme/learningspace/img/rough_wood_boards-wallpaper-1920x1200.jpg", 
       //"http://learn-dev.falmouth.ac.uk/theme/learningspace/img/wave_7-wallpaper-1920x1200.jpg",
       "../theme/learningspace/img/black-chalkboard-background.jpg"
-  ], {duration: 5000, fade: 300});
+  ], {duration: 5000, fade: 300});*/
 
   // -------------------------------------------------------------------------
   // Modal Vimeo Embed Stop on modal Close 
