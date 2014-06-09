@@ -113,7 +113,7 @@ echo $OUTPUT->doctype() ?>
                                 <li><a href="https://sp.falmouth.ac.uk/public/itservices/Pages/IT%20Services.aspx">IT Services</a></li>
                                 <li><a href="http://library.fxplus.ac.uk/">Library and Information Services</a></li>
                                 <li><a href="http://intranet.falmouth.ac.uk/html/qualityoffice/">Quality Office</a></li>
-                                <li><a href="/course/view.php?id=665">Results Release</a></li>
+                                <li><a href="/course/view.php?id=665">Assessment Information</a></li>
                                 <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=686">Software Training</a></li>
                                 <li><a href="http://learningspace.falmouth.ac.uk/course/view.php?id=714&section=1&section=1">Student Reps</a></li>
                                 <li><a href="http://www.fxplus.ac.uk/study/student-support-services">Student Support</a></li>
