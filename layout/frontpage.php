@@ -2,8 +2,10 @@
 
 <?php 
 // If redrecting from login, i.e. user just logged in, redirect to ou
+    
 
-    redirect('http://localhost:8888/learningspace/rdrctr/student');
+    $url = $CFG->wwwroot . "/apps/scip/student";
+    redirect($url);
 
 ?>
 
