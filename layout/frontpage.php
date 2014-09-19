@@ -1,5 +1,12 @@
 <?php include 'header.php'; ?>
 
+<?php 
+// If redrecting from login, i.e. user just logged in, redirect to ou
+
+    redirect('http://localhost:8888/learningspace/rdrctr/student');
+
+?>
+
 <div id="page-wrapper">
 <div id="page" class="container-fluid">
 <div id="page-content" class="row-fluid">
