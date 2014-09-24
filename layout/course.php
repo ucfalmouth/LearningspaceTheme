@@ -8,9 +8,6 @@
 
 
 
-<?php print_r($USER); ?>
-
-
 <?php if ($layout === 'pre-and-post') { ?>
     <div id="region-bs-main-and-pre" class="clearfix">
     <div class="row-fluid">

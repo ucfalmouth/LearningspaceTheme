@@ -25,9 +25,3 @@
 
 //require_once('renderers/course_format.php');
 require_once('renderers/core.php');
-
-
-
-
-
-

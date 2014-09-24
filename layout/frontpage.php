@@ -1,12 +1,11 @@
-<?php include 'header.php'; ?>
-
-<?php 
-// If redrecting from login, i.e. user just logged in, redirect to ou
-    
-
-    $url = $CFG->wwwroot . "/apps/scip/student";
+<?php include 'header.php';
+// If the user auths with something other than ldap,
+// i.e. if they are a student, and login with ldap2
+// redirect to scio
+if ($USER->auth != "ldap") {
+    $url = $CFG->wwwroot . "/apps/scip/";
     redirect($url);
-
+}
 ?>
 
 <div id="page-wrapper">
@@ -14,27 +13,28 @@
 <div id="page-content" class="row-fluid">
 
 <!--<?php
-global $COURSE; 
+global $COURSE;
 global $DB;   //makes sure the database is available
-$category = $DB->get_record('course_categories',array('id'=>$COURSE->category));    //gets the database record from the course_categories table for the active course
-$cats=explode("/",$category->path);    // splits the category path into an array so that each level in the categories is a different level in the array
+$category = $DB->get_record('course_categories', array('id'=>$COURSE->category));    //gets the database record from the course_categories table for the active course
+$cats=explode("/", $category->path);    // splits the category path into an array so that each level in the categories is a different level in the array
 $depth=1;    // what depth of sub-category you want to display: Note this may need some error trapping to ensure there are that many levels of subcategories for the course - or setting a default value if not
-$categorydepth = $DB->get_record("course_categories", array("id" => $cats[$depth]) );    //gets the database record for the course_category with the id number set by $depth position in the array of the category path for the active path
+$categorydepth = $DB->get_record("course_categories", array("id" => $cats[$depth]));    //gets the database record for the course_category with the id number set by $depth position in the array of the category path for the active path
 $categoryname = $categorydepth->name;    //sets a variable name for the set depth of subcategory ready to be displayed as required
 echo $categoryname;
 ?>-->
 
-<?php if ($layout === 'pre-and-post') { ?>
-    <div id="region-bs-main-and-pre" class="span8">
-    <div class="row-fluid">
-    <section id="region-main" class="span8 offset-2">
-<?php } else if ($layout === 'side-post-only') { ?>
-    <section id="region-main" class="span8">
-<?php } else if ($layout === 'side-pre-only') { ?>
-    <section id="region-main" class="span8 offset-2">
-<?php } else if ($layout === 'content-only') { ?>
-    <section id="region-main" class="span12">
-<?php } ?>
+
+    <?php if ($layout === 'pre-and-post') { ?>
+        <div id="region-bs-main-and-pre" class="span8">
+        <div class="row-fluid">
+        <section id="region-main" class="span8 offset-2">
+    <?php } else if ($layout === 'side-post-only') { ?>
+        <section id="region-main" class="span8">
+    <?php } else if ($layout === 'side-pre-only') { ?>
+        <section id="region-main" class="span8 offset-2">
+    <?php } else if ($layout === 'content-only') { ?>
+        <section id="region-main" class="span12">
+    <?php } ?>
 
 
     

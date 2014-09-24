@@ -106,7 +106,7 @@ echo $OUTPUT->doctype() ?>
                         <ul class="dropdown-menu">
                                 <li><a href="http://ask.fxplus.ac.uk/">ASK (Academic Skills)</a></li>
                                 <li><a href="http://www.falmouth.ac.uk/facilities/the-compass">The Compass</a></li>
-                                <li><a href="http://careerhub.falmouth.ac.uk">Creative Futures Hub</a></li>
+                                <li><a href="http://careerhub.falmouth.ac.uk">CareerHub</a></li>
                                 <li><a href="http://dyslexia.fxplus.ac.uk">Dyslexia Skills</a></li>
                                 <li><a href="http://intranet.falmouth.ac.uk/html/finance/">Finance Services</a></li>
                                 <li><a href="http://www.fxu.org.uk/">FXU</a></li>

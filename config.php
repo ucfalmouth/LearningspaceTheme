@@ -148,7 +148,7 @@ if (empty($THEME->settings->enablejquery)) {
     );
 }
 
-if ( strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 8') || strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 7') ) {
+if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 8') || strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 7')) {
     $THEME->javascripts[] = 'html5shiv';
 }
 

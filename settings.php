@@ -16,20 +16,20 @@ if ($ADMIN->fulltree) {
     $settings->add($setting);
 
     $name = 'theme_learningspace/enablejquery';
-    $title = get_string('enablejquery','theme_learningspace');
+    $title = get_string('enablejquery', 'theme_learningspace');
     $description = get_string('enablejquerydesc', 'theme_learningspace');
     $default = '1';
     $setting = new admin_setting_configcheckbox($name, $title, $description, $default);
     $settings->add($setting);
 
     $name = 'theme_learningspace/logo_url';
-    $title = get_string('logo_url','theme_learningspace');
+    $title = get_string('logo_url', 'theme_learningspace');
     $description = get_string('logo_urldesc', 'theme_learningspace');
     $setting = new admin_setting_configtext($name, $title, $description, '', PARAM_URL);
     $settings->add($setting);
 
     $name = 'theme_learningspace/customcss';
-    $title = get_string('customcss','theme_learningspace');
+    $title = get_string('customcss', 'theme_learningspace');
     $description = get_string('customcssdesc', 'theme_learningspace');
     $default = '';
     $setting = new admin_setting_configtextarea($name, $title, $description, $default);
