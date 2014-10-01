@@ -8,12 +8,12 @@
                 <li><a href="http://www.falmouth.ac.uk/termdates">Term Dates</a></li>
                 <li><a href="http://et.falmouth.ac.uk">Help</a></li>
                 <li><a href="http://et.falmouth.ac.uk">Educational Technology</a></li>
-                
+                <li><a href="http://www.falmouth.ac.uk/studentregulations">Student Regulations</a></li>
             </ul>
 
         </div>
         <span id="credits">
-            <small>Lovingly crafted by <a href="http://et.falmouth.ac.uk">Educational Technology</a>. &copy; University College Falmouth. All rights reserved.</small>
+            <small>Lovingly crafted by <a href="http://et.falmouth.ac.uk">Educational Technology</a>. &copy; Falmouth University. All rights reserved.</small>
         </span>
         <a id="fal-logo" href="http://falmouth.ac.uk/"></a>
     </div>
