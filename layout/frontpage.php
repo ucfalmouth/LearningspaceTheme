@@ -1,12 +1,15 @@
-<?php include 'header.php';
-// If the user auths with something other than ldap,
+<?php // If the user auths with something other than ldap,
 // i.e. if they are a student, and login with ldap2
-// redirect to scio
+// redirect to scip 
 if ($USER->auth != "ldap") {
     $url = $CFG->wwwroot . "/apps/scip/";
     redirect($url);
 }
 ?>
+
+
+
+<?php include 'header.php'; ?>
 
 <div id="page-wrapper">
 <div id="page" class="container-fluid">
