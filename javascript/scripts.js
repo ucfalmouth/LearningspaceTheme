@@ -421,18 +421,16 @@ else if(currentUserRole == "admin"){
 
 
 // Off canvas memu ---------------------------------------------------------
-$('#responsive-menu-button').sidr({
-  name: 'sidr-main',
-  speed: 200,
-  body: '#region-main, .navbar-fixed-top',
-  source: '.editbtn, #region-pre, #user-context-menu'
-});   
-
-// Stop the link-click jumping the content to top
-$('#responsive-menu-button').click(function(event){
-  $(".brand").fadeToggle();
-  event.preventDefault();
-});
+$("#responsive-menu-button").sidr({
+        name: "sidr-main",
+        speed: 200,
+        body: "#region-main, .navbar-fixed-top, .brand",
+        source: ".editbtn, #region-pre, #user-context-menu"
+    });
+    $("#responsive-menu-button").click(function (e) {
+        // $(".brand").toggle();
+        e.preventDefault();
+    });
 
 
 if ($('.path-course-view').length != 0){

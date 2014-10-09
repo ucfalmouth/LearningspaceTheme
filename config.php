@@ -152,4 +152,19 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 8') || strpos($_SERVER['HTTP_USER_
     $THEME->javascripts[] = 'html5shiv';
 }
 
-$THEME->javascripts_footer = array('plugins-ck', 'scripts-ck');
+$THEME->javascripts_footer = array(
+    'jquery-10.js',
+    'jquery.forms.js',
+    'tooltip.js',
+    'popover.js',
+    'dropdown.js',
+    'sidr.js',
+    'classie.js',
+    'placeholder.js',
+    'inboxtable.js',
+    'datatables.min.js',
+    'datatables.plugins.js',
+    'fitvids.js',
+    'quform.js',
+    'scripts'
+);

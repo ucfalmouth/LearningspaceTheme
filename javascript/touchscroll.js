@@ -26,6 +26,6 @@
 	}
 
 	//On page load
-	touchScroll('sidr-main')
+	touchScroll('#sidr-main')
 
 })();

@@ -20,6 +20,7 @@
 </footer>
 
 <!-- End of body html -->
+<script src="<?php echo $CFG->wwwroot;?>/theme/learningspace/javascript/plugins_main.js"></script>
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 <!-- End of body html -->
 
