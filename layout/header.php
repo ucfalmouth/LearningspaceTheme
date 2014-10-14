@@ -100,7 +100,7 @@ echo $OUTPUT->doctype() ?>
                     <a id="responsive-menu-button" href="#sidr-main"><i class="fa icon fa-bars"></i></a>
                 </div>
                 <ul class="nav">
-                    <li><a href="<?php echo $CFG->wwwroot;?>">My Modules</a></li>
+                    <li><a href="<?php echo $CFG->wwwroot;?>" class="link--my-modules">My Modules</a></li>
                     
                     <li class="dropdown"><a class="menu-item-resources dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
                         <ul class="dropdown-menu">

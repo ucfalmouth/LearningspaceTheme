@@ -28,12 +28,19 @@
 <!--<?php if (!empty($PAGE->theme->settings->enablejquery)) {?>-->
 </div>
 
-<script >
+<script>
 $(document).ready(function() {
-$(".aaronclick").click(function() {
-$("#section-0 .section-modchooser-link a, #section-0 .section-modchooser-link span").click();
-});
-
+    $(".link--my-modules").on("click", "a", function(){
+        var _this = this;
+        ga('send', 'event', 'My modules', 'Click button', {
+            'hitCallback': function() {
+                console.log("Logging the click");
+            }
+        });
+    });
+    $(".aaronclick").click(function() {
+        $("#section-0 .section-modchooser-link a, #section-0 .section-modchooser-link span").click();
+    });
 });
 </script>
 

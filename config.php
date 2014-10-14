@@ -137,30 +137,31 @@ $THEME->layouts = array(
 
 $THEME->csspostprocess = 'learningspace_user_settings';
 
-if (empty($THEME->settings->enablejquery)) {
-    $THEME->javascripts = array(
-        //'bootstrapengine',
-        //'moodlebootstrap',
-        //'bootstrapcollapse',
-        //'bootstrapdropdown',
-        'introjs'
-        //'scripts'
-    );
-}
+// if (empty($THEME->settings->enablejquery)) {
+//     $THEME->javascripts = array(
+//         //'bootstrapengine',
+//         //'moodlebootstrap',
+//         //'bootstrapcollapse',
+//         //'bootstrapdropdown',
+//         'introjs'
+//         //'scripts'
+//     );
+// }
 
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 8') || strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 7')) {
     $THEME->javascripts[] = 'html5shiv';
 }
 
+// 'tooltip.js',
+//     'popover.js',
+//     'dropdown.js',
+//     'sidr.js',
+//     'classie.js',
+//     'placeholder.js',
+
 $THEME->javascripts_footer = array(
     'jquery-10.js',
     'jquery.forms.js',
-    'tooltip.js',
-    'popover.js',
-    'dropdown.js',
-    'sidr.js',
-    'classie.js',
-    'placeholder.js',
     'inboxtable.js',
     'datatables.min.js',
     'datatables.plugins.js',
