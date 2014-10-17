@@ -46,6 +46,7 @@
 
     <?php } else if ($layout === 'side-pre-only') { ?>
             <aside id="region-pre" class="span4 block-region region-content">
+            
             <!-- <?php echo $PAGE->button; ?> -->
 
 
@@ -56,7 +57,20 @@
                     echo $OUTPUT->blocks_for_region('side-pre');
                 } else  
             ?>
-
+            
+            <?php 
+            // If the user auths with something other than ldap,
+            // i.e. if they are a student, and login with ldap2
+            // redirect to scip 
+            if ($USER->auth == "ldap") {
+              $courseId = $COURSE->id;
+              echo "<div class=\"block\"><div class=\"content\"><a href=\"" 
+              . $CFG->wwwroot . 
+              "/course/recent.php?id=" 
+              . $courseId . 
+              "\" style=\"line-height: 24px;\" class=\"btn recent-activity__btn\">Recent activity</a></div></div>";
+            }
+            ?>
             
             </aside>
     <?php if ($layout === 'pre-and-post') {
@@ -70,6 +84,7 @@
               } else {
                   echo $OUTPUT->blocks_for_region('side-pre');
               } ?>
+
         </aside>
     <?php } ?>
 <?php } ?>

@@ -38,11 +38,13 @@ $(document).ready(function() {
             }
         });
     });
+
     $(".aaronclick").click(function() {
         $("#section-0 .section-modchooser-link a, #section-0 .section-modchooser-link span").click();
     });
 });
 </script>
+
 
 
 <?php }?>
