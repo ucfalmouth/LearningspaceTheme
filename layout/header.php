@@ -54,8 +54,8 @@ echo $OUTPUT->doctype() ?>
 
 
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
-    
-    
+
+
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="<?php echo $CFG->wwwroot; ?>/theme/learningspace/style/print.css" media="print" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -101,7 +101,7 @@ echo $OUTPUT->doctype() ?>
                 </div>
                 <ul class="nav">
                     <li><a href="<?php echo $CFG->wwwroot;?>">My Modules</a></li>
-                    
+
                     <li class="dropdown"><a class="menu-item-resources dropdown-toggle" data-toggle="dropdown" href="#">Resources</a>
                         <ul class="dropdown-menu">
                                 <li><a href="http://ask.fxplus.ac.uk/">ASK (Academic Skills)</a></li>
@@ -110,7 +110,7 @@ echo $OUTPUT->doctype() ?>
                                 <li><a href="http://dyslexia.fxplus.ac.uk">Dyslexia Skills</a></li>
                                 <li><a href="http://intranet.falmouth.ac.uk/html/finance/">Finance Services</a></li>
                                 <li><a href="http://www.fxu.org.uk/">FXU</a></li>
-                                <li><a href="https://sp.falmouth.ac.uk/public/itservices/Pages/IT%20Services.aspx">IT Services</a></li>
+                                <li><a href="http://www.fxplus.ac.uk/study/it-service-desk">IT Services</a></li>
                                 <li><a href="http://library.fxplus.ac.uk/">Library and Information Services</a></li>
                                 <li><a href="http://intranet.falmouth.ac.uk/html/qualityoffice/">Quality Office</a></li>
                                 <li><a href="/course/view.php?id=665">Assessment Information</a></li>
@@ -129,9 +129,9 @@ echo $OUTPUT->doctype() ?>
                     echo $custommenu;
                 } ?>
                 <ul class="nav pull-right">
-                <li class="editbtn"><?php echo $PAGE->button; ?></li> 
-                 
-                  <li><a href="http://etsupport.freshdesk.com/support/solutions/158481">Help</a></li> 
+                <li class="editbtn"><?php echo $PAGE->button; ?></li>
+
+                  <li><a href="http://etsupport.freshdesk.com/support/solutions/158481">Help</a></li>
                 <li><?php echo $PAGE->headingmenu ?></li>
                 <li class="dropdown"><?php echo $OUTPUT->login_info() ?></li>
                 <!--<li><a href="#" id="trigger" class="icon-list"> MAIN MENU</a></li>-->
@@ -152,7 +152,7 @@ echo $OUTPUT->doctype() ?>
     <div class="header-inner dropdown container-fluid">
     <?php
         if (!$haslogo) { ?>
-            
+
             <?php
         } else { ?>
              <a class="logo" href="<?php echo $CFG->wwwroot; ?>" title="<?php print_string('home'); ?>">
@@ -163,7 +163,7 @@ echo $OUTPUT->doctype() ?>
         } ?>
     <?php if ($hasnavbar) { ?>
         <nav class="breadcrumb-button"><?php echo $PAGE->button; ?></nav>
-        
+
     <?php } ?>
 
     <?php if (!empty($courseheader)) { ?>
@@ -178,7 +178,7 @@ echo $OUTPUT->doctype() ?>
 
 
 <?php
-    // User roles hack. 
+    // User roles hack.
     global $COURSE;
     global $USER;
     $role = $USER->description;
@@ -189,12 +189,11 @@ echo $OUTPUT->doctype() ?>
 
     if (!has_capability('moodle/course:viewhiddensections', $coursecontext)) {
         echo "<div data-role=\"student\" id=\"userrole\" style=\"display:none\">Role is ".$role."</div>";
-    } 
+    }
     if (has_capability('moodle/course:viewhiddensections', $coursecontext) && $role != "ET") {
         echo "<div data-role=\"teacher\" id=\"userrole\" style=\"display:none\">Role is ".$role."</div>";
-    } 
+    }
     if(has_capability('moodle/course:viewhiddensections', $coursecontext) && $role == "ET") {
         echo "<div data-role=\"admin\" id=\"userrole\" style=\"display:none\">Role is ".$role."</div>";
     }
 ?>
-
