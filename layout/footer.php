@@ -3,12 +3,12 @@
         <?php echo $OUTPUT->standard_footer_html(); ?>
         <div class="row-fluid page-footer">
             <ul class="unstyled">
-                <li><a href="http://studentmail.falmouth.ac.uk/">Student Email</a></li>
-                <li><a href="http://mailspace.falmouth.ac.uk/">Staff Email</a></li>
-                <li><a href="http://www.falmouth.ac.uk/termdates">Term Dates</a></li>
-                <li><a href="http://et.falmouth.ac.uk">Help</a></li>
-                <li><a href="http://et.falmouth.ac.uk">Educational Technology</a></li>
-                
+              <li><a href="http://myfalmouth.falmouth.ac.uk/">MyFalmouth</a></li>
+              <li><a href="http://studentmail.falmouth.ac.uk/">Student Email</a></li>
+              <li><a href="http://mailspace.falmouth.ac.uk/">Staff Email</a></li>
+              <li><a href="http://www.falmouth.ac.uk/termdates">Term Dates</a></li>
+              <li><a href="http://et.falmouth.ac.uk">Help</a></li>
+              <li><a href="http://et.falmouth.ac.uk">Educational Technology</a></li>
             </ul>
 
         </div>
